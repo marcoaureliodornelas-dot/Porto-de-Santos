@@ -1,13 +1,14 @@
-<title>Navios Tecon Santos</title>
+<title>Navios Porto de Santos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-  /* Layout: painel de operação — faixa de 4 indicadores clicáveis, depois a tabela de navios. */
+  /* Layout: painel de operação — fontes por terminal, 4 indicadores clicáveis, filtro de terminal e a tabela de navios. */
   :root {
     --bg: #f3f5f8; --surface: #ffffff; --ink: #14202e; --ink-2: #4a5a6d; --ink-3: #75849a;
     --line: #dde3ea; --head: #e9eef4; --accent: #0a5c8a; --accent-soft: #e2eff7;
     --warn: #9a5b00; --warn-bg: #fff3dc; --crit: #b42318; --crit-bg: #fdeceb; --good: #1d7a4c; --good-bg: #e4f4ea;
+    --t-tecon: #00918e; --t-dpw: #7a5af0;
     --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
     --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
     --f-data: "IBM Plex Mono", ui-monospace, Consolas, monospace;
@@ -17,6 +18,7 @@
       --bg: #0d141c; --surface: #152029; --ink: #e5ecf3; --ink-2: #a4b2c2; --ink-3: #7b8a9c;
       --line: #263441; --head: #1b2833; --accent: #5cb3e6; --accent-soft: #15344a;
       --warn: #f2b84b; --warn-bg: #3a2b0d; --crit: #ff958a; --crit-bg: #3d1716; --good: #6fd3a0; --good-bg: #123325;
+      --t-tecon: #17a3a1; --t-dpw: #8f6ff2;
       color-scheme: dark;
     }
   }
@@ -24,26 +26,34 @@
     --bg: #0d141c; --surface: #152029; --ink: #e5ecf3; --ink-2: #a4b2c2; --ink-3: #7b8a9c;
     --line: #263441; --head: #1b2833; --accent: #5cb3e6; --accent-soft: #15344a;
     --warn: #f2b84b; --warn-bg: #3a2b0d; --crit: #ff958a; --crit-bg: #3d1716; --good: #6fd3a0; --good-bg: #123325;
+    --t-tecon: #17a3a1; --t-dpw: #8f6ff2;
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 var(--f-body); }
-  main { max-width: 1180px; margin: 0 auto; padding-block: 28px 56px; padding-inline: 16px;
+  main { max-width: 1240px; margin: 0 auto; padding-block: 28px 56px; padding-inline: 16px;
          display: flex; flex-direction: column; gap: 20px; }
 
-  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 8px 24px; }
+  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px; }
   .eyebrow { font: 500 12px/1 var(--f-data); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
   h1 { font: 700 clamp(24px, 4vw, 32px)/1.1 var(--f-display); margin: 0; text-wrap: balance; }
-  .fonte { color: var(--ink-2); font-size: 13px; margin: 0; }
-  .fonte b { font-family: var(--f-data); font-weight: 500; color: var(--ink); }
+  .fontes { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; list-style: none; font-size: 13px; color: var(--ink-2); }
+  .fontes b { font-family: var(--f-data); font-weight: 500; color: var(--ink); }
   .aviso { color: var(--warn); }
+
+  /* Identidade do terminal: ponto colorido + nome (a cor nunca aparece sozinha). */
+  .term { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+  .term::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--cor); flex: none; }
+  .term[data-t="Tecon Santos"] { --cor: var(--t-tecon); }
+  .term[data-t="DP World Santos"] { --cor: var(--t-dpw); }
 
   .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
   @media (max-width: 900px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 420px) { .kpis { grid-template-columns: 1fr; } }
   .kpi { text-align: left; font: inherit; color: inherit; cursor: pointer; background: var(--surface);
          border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 6px;
-         grid-template-rows: auto auto 1fr auto; transition: border-color .15s, box-shadow .15s; }
+         grid-template-rows: auto auto 1fr auto auto; transition: border-color .15s, box-shadow .15s; }
   .kpi:hover { border-color: var(--accent); }
   .kpi:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .kpi[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
@@ -51,33 +61,41 @@
   .kpi-val { font: 700 40px/1 var(--f-display); font-variant-numeric: tabular-nums; display: flex; align-items: baseline; gap: 6px; }
   .kpi-val small { font: 500 14px var(--f-body); color: var(--ink-2); }
   .kpi-det { font-size: 13px; color: var(--ink-2); }
+  .kpi-split { display: flex; flex-wrap: wrap; gap: 4px 14px; font: 400 12px var(--f-data); color: var(--ink-2);
+               border-top: 1px solid var(--line); padding-top: 8px; }
+  .kpi-split b { color: var(--ink); font-weight: 500; }
   .pill { justify-self: start; font: 500 11px/1 var(--f-data); letter-spacing: .04em; text-transform: uppercase;
-          padding: 5px 8px; border-radius: 999px; }
+          padding: 5px 8px; border-radius: 999px; white-space: nowrap; }
   .pill.good { color: var(--good); background: var(--good-bg); }
   .pill.warn { color: var(--warn); background: var(--warn-bg); }
   .pill.crit { color: var(--crit); background: var(--crit-bg); }
   .pill.neutral { color: var(--accent); background: var(--accent-soft); }
 
   .barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .barra input[type=search] { flex: 1 1 240px; min-width: 0; padding: 9px 12px; border: 1px solid var(--line);
+  .barra input[type=search] { flex: 1 1 220px; min-width: 0; padding: 9px 12px; border: 1px solid var(--line);
          border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
   .btn, .chk { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
          color: var(--ink); font: inherit; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
-  .btn:focus-visible, .barra input:focus-visible, .chk:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
-  #limpar[hidden] { display: none; }
+  .btn:focus-visible, .barra input:focus-visible, .chk:focus-within, .seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); flex-wrap: wrap; }
+  .seg button { font: inherit; color: var(--ink-2); background: none; border: 0; padding: 9px 12px; cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); font-weight: 600; }
 
   .tabela { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; min-width: 0; }
-  table { width: 100%; border-collapse: collapse; min-width: 820px; }
+  table { width: 100%; border-collapse: collapse; min-width: 960px; }
   th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
   tbody tr:last-child td { border-bottom: 0; }
   th { background: var(--head); font: 600 12px/1.3 var(--f-body); color: var(--ink-2); letter-spacing: .02em; }
   th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
   th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   th .seta { color: var(--accent); }
+  td.terminal { font-size: 13px; }
   td.navio { font-weight: 600; white-space: normal; min-width: 180px; }
   td.data, td.duracao_janela { font: 400 13px var(--f-data); font-variant-numeric: tabular-nums; }
   td.berth, td.dia { font-size: 13px; color: var(--ink-2); }
   td .tag { margin-left: 8px; }
+  td .prev { margin-left: 6px; font: 500 11px var(--f-data); color: var(--ink-3); }
   tr.late td.deadline { color: var(--crit); font-weight: 500; }
   tr.soon td.deadline { color: var(--warn); font-weight: 500; }
   td.vazio { color: var(--ink-3); }
@@ -87,16 +105,17 @@
 <main>
   <header>
     <div>
-      <p class="eyebrow">Tecon Santos · recebimento de exportação</p>
-      <h1>Navios e deadlines</h1>
+      <p class="eyebrow">Porto de Santos · recebimento de exportação</p>
+      <h1>Navios e deadlines por terminal</h1>
     </div>
-    <p class="fonte" id="fonte"></p>
+    <ul class="fontes" id="fontes"></ul>
   </header>
 
   <section class="kpis" id="kpis" aria-label="Indicadores"></section>
 
   <div class="barra">
-    <input type="search" id="busca" placeholder="Buscar navio, berth ou dia" aria-label="Buscar">
+    <div class="seg" id="terminais" role="group" aria-label="Terminal"></div>
+    <input type="search" id="busca" placeholder="Buscar navio, serviço ou dia" aria-label="Buscar">
     <button class="btn" id="ordem" type="button"></button>
     <label class="chk"><input type="checkbox" id="vencidos"> Mostrar deadlines vencidos</label>
     <button class="btn" id="limpar" type="button" hidden>Limpar filtro</button>
@@ -113,20 +132,21 @@
 const DADOS = /*DADOS*/null;
 
 const COLS = [
-  ["navio", "Navio"], ["berth", "Berth"], ["dia", "Dia"],
+  ["terminal", "Terminal"], ["navio", "Navio"], ["berth", "Berth / serviço"], ["dia", "Dia"],
   ["deadline", "Deadline"], ["previsao_chegada", "Previsão de chegada"],
   ["liberacao_dry", "Liberação do dry"], ["duracao_janela", "Duração da janela"],
 ];
 const DATAS = new Set(["deadline", "previsao_chegada", "liberacao_dry"]);
 const H = 3600e3;
-const estado = { col: "deadline", asc: true, busca: "", vencidos: false, filtro: null };
+const estado = { col: "deadline", asc: true, busca: "", vencidos: false, filtro: null, terminal: "" };
 
 function lerPref() {
   try { const p = JSON.parse(localStorage.getItem("painel-navios") || "{}");
-        ["col", "asc", "vencidos"].forEach(k => { if (k in p) estado[k] = p[k]; }); } catch (_) {}
+        ["col", "asc", "vencidos", "terminal"].forEach(k => { if (k in p) estado[k] = p[k]; }); } catch (_) {}
 }
 function salvarPref() {
-  try { localStorage.setItem("painel-navios", JSON.stringify({ col: estado.col, asc: estado.asc, vencidos: estado.vencidos })); } catch (_) {}
+  try { localStorage.setItem("painel-navios", JSON.stringify(
+    { col: estado.col, asc: estado.asc, vencidos: estado.vencidos, terminal: estado.terminal })); } catch (_) {}
 }
 
 const paraDate = s => s ? new Date(s.replace(" ", "T")) : null;
@@ -144,6 +164,8 @@ function fmtDur(min) {
   return d ? `${d}d ${r}h` : `${r}h`;
 }
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const term = t => `<span class="term" data-t="${esc(t)}">${esc(t)}</span>`;
+const curto = t => t.replace(" Santos", "");
 
 // Regras de cada indicador; "agora" é o momento em que a página é aberta.
 const FILTROS = {
@@ -153,29 +175,40 @@ const FILTROS = {
   janela: (n, t) => { const d = paraDate(n.deadline); return janelaMin(n) !== null && d > t; },
 };
 
+const doTerminal = n => !estado.terminal || n.terminal === estado.terminal;
+
+function porTerminal(lista, valor) {
+  return DADOS.terminais.filter(t => !estado.terminal || t.terminal === estado.terminal).map(t => {
+    const sub = lista.filter(n => n.terminal === t.terminal);
+    return `<span class="term" data-t="${esc(t.terminal)}">${esc(curto(t.terminal))} <b>${esc(valor(sub))}</b></span>`;
+  }).join("");
+}
+
 function kpis(t) {
-  const nav = DADOS.navios;
+  const nav = DADOS.navios.filter(doTerminal);
   const aberto = nav.filter(n => FILTROS.aberto(n, t));
   const h48 = nav.filter(n => FILTROS.h48(n, t));
   const h24 = h48.filter(n => paraDate(n.deadline) - t <= 24 * H);
   const d7 = nav.filter(n => FILTROS.d7(n, t));
   const d2 = d7.filter(n => paraDate(n.previsao_chegada) - t <= 48 * H);
-  const jan = nav.filter(n => FILTROS.janela(n, t)).map(n => ({ n, m: janelaMin(n) }));
-  const media = jan.length ? jan.reduce((s, x) => s + x.m, 0) / jan.length : null;
-  const curta = jan.slice().sort((a, b) => a.m - b.m)[0];
+  const jan = nav.filter(n => FILTROS.janela(n, t));
+  const media = l => l.length ? l.reduce((s, n) => s + janelaMin(n), 0) / l.length : null;
+  const curta = jan.slice().sort((a, b) => janelaMin(a) - janelaMin(b))[0];
+  const qtd = l => l.length;
 
   const cards = [
     { id: "aberto", rot: "Recebimento aberto agora", val: aberto.length, un: aberto.length === 1 ? "navio" : "navios",
-      det: "Dry liberado e deadline ainda não vencido",
+      det: "Dry liberado e deadline ainda não vencido", split: porTerminal(aberto, qtd),
       pill: aberto.length ? ["good", "Gate aberto"] : ["neutral", "Nenhum aberto"] },
     { id: "h48", rot: "Deadlines em 48 h", val: h48.length, un: h48.length === 1 ? "navio" : "navios",
-      det: h24.length ? `${h24.length} vencem nas próximas 24 h` : "Nenhum vence nas próximas 24 h",
+      det: h24.length ? `${h24.length} vencem nas próximas 24 h` : "Nenhum vence nas próximas 24 h", split: porTerminal(h48, qtd),
       pill: h24.length ? ["crit", "Ação hoje"] : h48.length ? ["warn", "Atenção"] : ["good", "Sem urgência"] },
     { id: "d7", rot: "Chegadas em 7 dias", val: d7.length, un: d7.length === 1 ? "navio" : "navios",
-      det: `${d2.length} previstas para as próximas 48 h`, pill: ["neutral", "Previsão"] },
-    { id: "janela", rot: "Janela média de recebimento", val: media === null ? "—" : fmtDur(media), un: "",
-      det: curta ? `Mais curta: ${fmtDur(curta.m)} · ${curta.n.navio}` : "Sem navios com dry liberado",
-      pill: curta && curta.m < 48 * 60 ? ["warn", "Janela curta à vista"] : ["neutral", `${jan.length} navios com data`] },
+      det: `${d2.length} previstas para as próximas 48 h`, split: porTerminal(d7, qtd), pill: ["neutral", "Previsão"] },
+    { id: "janela", rot: "Janela média de recebimento", val: media(jan) === null ? "—" : fmtDur(media(jan)), un: "",
+      det: curta ? `Mais curta: ${fmtDur(janelaMin(curta))} · ${curta.navio} (${curto(curta.terminal)})` : "Sem navios com dry liberado",
+      split: porTerminal(jan, l => l.length ? fmtDur(media(l)) : "—"),
+      pill: curta && janelaMin(curta) < 48 * 60 ? ["warn", "Janela curta à vista"] : ["neutral", `${jan.length} navios com data`] },
   ];
   document.getElementById("kpis").innerHTML = cards.map(c => `
     <button class="kpi" type="button" data-f="${c.id}" aria-pressed="${estado.filtro === c.id}">
@@ -183,6 +216,7 @@ function kpis(t) {
       <span class="kpi-val">${esc(c.val)}${c.un ? `<small>${c.un}</small>` : ""}</span>
       <span class="kpi-det">${esc(c.det)}</span>
       <span class="pill ${c.pill[0]}">${c.pill[1]}</span>
+      <span class="kpi-split">${c.split}</span>
     </button>`).join("");
 }
 
@@ -191,10 +225,16 @@ function valorOrdem(n, c) { return c === "duracao_janela" ? janelaMin(n) : n[c] 
 function render() {
   const t = new Date();
   kpis(t);
+  document.getElementById("terminais").innerHTML =
+    [["", `Todos <span class="prev">${DADOS.navios.length}</span>`],
+     ...DADOS.terminais.map(x => [x.terminal, `${term(x.terminal)} <span class="prev">${x.navios}</span>`])]
+      .map(([v, rot]) => `<button type="button" data-t="${esc(v)}" aria-pressed="${estado.terminal === v}">${rot}</button>`).join("");
+
   const q = estado.busca.trim().toUpperCase();
   const f = estado.filtro && FILTROS[estado.filtro];
   const linhas = DADOS.navios.filter(n => {
-    if (q && !`${n.navio} ${n.berth} ${n.dia}`.includes(q)) return false;
+    if (!doTerminal(n)) return false;
+    if (q && !`${n.navio} ${n.berth} ${n.dia} ${n.terminal.toUpperCase()}`.includes(q)) return false;
     if (f) return f(n, t);
     const dl = paraDate(n.deadline);
     return estado.vencidos || !dl || dl >= t;
@@ -215,11 +255,14 @@ function render() {
     const cls = dl && dl < t ? "late" : dl && dl - t <= 48 * H ? "soon" : "";
     const tag = cls === "late" ? `<span class="pill crit tag">Vencido</span>` : cls === "soon" ? `<span class="pill warn tag">48 h</span>` : "";
     return `<tr class="${cls}">` + COLS.map(([k]) => {
+      if (k === "terminal") return `<td class="terminal">${term(n.terminal)}</td>`;
       const v = DATAS.has(k) ? fmt(n[k]) : n[k];
-      const extra = k === "deadline" && v ? tag : "";
+      let extra = "";
+      if (k === "deadline" && v) extra = tag;
+      if (k === "liberacao_dry" && v && n.liberacao_prevista) extra = `<span class="prev" title="Previsão de abertura do gate">prev.</span>`;
       return `<td class="${k}${DATAS.has(k) ? " data" : ""}${v ? "" : " vazio"}">${v ? esc(v) : "—"}${extra}</td>`;
     }).join("") + "</tr>";
-  }).join("") || `<tr><td colspan="7" class="vazio">Nenhum navio neste filtro.</td></tr>`;
+  }).join("") || `<tr><td colspan="${COLS.length}" class="vazio">Nenhum navio neste filtro.</td></tr>`;
 
   const titulo = COLS.find(([k]) => k === c)[1];
   document.getElementById("ordem").textContent = DATAS.has(c)
@@ -229,17 +272,24 @@ function render() {
   document.getElementById("limpar").hidden = !estado.filtro;
   document.getElementById("vencidos").disabled = !!estado.filtro;
   document.getElementById("rodape").textContent =
-    `${linhas.length} de ${DADOS.navios.length} navios exibidos. Clique num indicador para filtrar a tabela e no título de uma coluna para ordenar.`;
+    `${linhas.length} navios exibidos. Clique num indicador para filtrar a tabela e no título de uma coluna para ordenar. ` +
+    `"prev." = liberação do dry ainda prevista (gate não aberto).`;
+}
+
+function fontes() {
+  document.getElementById("fontes").innerHTML = DADOS.terminais.map(x => {
+    const [d, h] = x.atualizado_em.split(" "), [a, m, dia] = d.split("-");
+    const idadeH = (Date.now() - paraDate(x.atualizado_em)) / H;
+    const velho = idadeH > 6 ? ` · <span class="aviso">há ${idadeH >= 48 ? Math.floor(idadeH / 24) + " dias" : Math.floor(idadeH) + " h"}</span>` : "";
+    return `<li>${term(x.terminal)}&nbsp;· dados de <b>${dia}/${m} ${h}</b>${velho}</li>`;
+  }).join("");
 }
 
 function iniciar() {
-  if (!DADOS) { document.getElementById("fonte").textContent = "Sem dados: rode tools/extrair_lista.py."; return; }
+  if (!DADOS) { document.getElementById("fontes").textContent = "Sem dados: rode tools/consolidar.py."; return; }
   lerPref();
-  const [d, h] = DADOS.atualizado_em.split(" "), [a, m, dia] = d.split("-");
-  const idadeH = (Date.now() - paraDate(DADOS.atualizado_em)) / H;
-  document.getElementById("fonte").innerHTML =
-    `Lista de <b>${dia}/${m}/${a} ${h}</b> · ${DADOS.navios.length} navios` +
-    (idadeH > 6 ? ` · <span class="aviso">salva há ${idadeH >= 48 ? Math.floor(idadeH / 24) + " dias" : Math.floor(idadeH) + " h"}</span>` : "");
+  if (estado.terminal && !DADOS.terminais.some(t => t.terminal === estado.terminal)) estado.terminal = "";
+  fontes();
   document.getElementById("vencidos").checked = estado.vencidos;
 
   document.getElementById("kpis").addEventListener("click", e => {
@@ -249,6 +299,10 @@ function iniciar() {
     else if (estado.filtro === "d7") { estado.col = "previsao_chegada"; estado.asc = true; }
     else if (estado.filtro) { estado.col = "deadline"; estado.asc = true; }
     render();
+  });
+  document.getElementById("terminais").addEventListener("click", e => {
+    const b = e.target.closest("button[data-t]"); if (!b) return;
+    estado.terminal = b.dataset.t; salvarPref(); render();
   });
   document.getElementById("cab").addEventListener("click", e => {
     const b = e.target.closest("button[data-col]"); if (!b) return;
@@ -261,7 +315,7 @@ function iniciar() {
   document.getElementById("vencidos").addEventListener("change", e => { estado.vencidos = e.target.checked; salvarPref(); render(); });
   document.getElementById("limpar").addEventListener("click", () => { estado.filtro = null; render(); });
   render();
-  setInterval(render, 60e3);  // indicadores acompanham o relógio
+  setInterval(() => { fontes(); render(); }, 60e3);  // indicadores acompanham o relógio
 }
 iniciar();
 </script>

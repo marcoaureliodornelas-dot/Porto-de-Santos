@@ -1,6 +1,6 @@
 """Extrai a lista de Recebimento de Exportação (Tecon Santos / Santos Brasil)
-de um PDF impresso do site e gera data/navios.csv, data/navios.json e
-docs/index.html.
+de um PDF impresso do site e grava em data/terminais/tecon-santos.json
+(o painel é refeito por consolidar.py).
 
 O PDF impresso pelo navegador não tem texto selecionável (as letras são
 desenhadas como vetores), então a tabela é lida assim:
@@ -12,11 +12,8 @@ desenhadas como vetores), então a tabela é lida assim:
 Uso:
     python tools/extrair_lista.py "C:/caminho/Relação de navios.pdf"
     python tools/extrair_lista.py            # usa o PDF mais recente em entrada/
-    python tools/extrair_lista.py --so-painel  # só refaz o painel
 """
 
-import csv
-import json
 import re
 import sys
 from collections import Counter
@@ -29,6 +26,8 @@ import pypdfium2 as pdfium
 from PIL import Image
 from rapidocr_onnxruntime import RapidOCR
 
+from consolidar import salvar_terminal
+
 RAIZ = Path(__file__).resolve().parent.parent
 ESCALA = 3.0  # pontos do PDF -> pixels da imagem usada no OCR
 
@@ -38,9 +37,7 @@ COLUNAS = [
     "inicio", "fim", "deadline", "previsao_chegada", "prev_lib_dry",
     "prev_lib_reefer", "liberacao_dry", "liberacao_reefer",
 ]
-# Colunas que a ferramenta mostra.
-SAIDA = ["navio", "berth", "dia", "deadline", "previsao_chegada", "liberacao_dry",
-         "duracao_janela"]
+TERMINAL = "Tecon Santos"
 COLUNAS_DATA = ["deadline", "previsao_chegada", "liberacao_dry"]
 
 DIAS = {"TERCA": "TERÇA", "SABADO": "SÁBADO"}
@@ -169,22 +166,6 @@ def para_data(texto):
         return None
 
 
-def duracao_janela(liberacao, deadline):
-    """Tempo entre a liberação do dry e o deadline, em "Xd Yh"."""
-    if not liberacao or not deadline:
-        return ""
-    fmt = "%Y-%m-%d %H:%M"
-    minutos = int((datetime.strptime(deadline, fmt) - datetime.strptime(liberacao, fmt))
-                  .total_seconds() // 60)
-    sinal = "-" if minutos < 0 else ""
-    horas, resto = divmod(abs(minutos), 60)
-    dias, horas = divmod(horas, 24)
-    texto = f"{dias}d {horas}h" if dias else f"{horas}h"
-    if resto:
-        texto += f" {resto}min"
-    return sinal + texto
-
-
 def limpar(registros):
     navios = []
     for r in registros:
@@ -202,50 +183,11 @@ def limpar(registros):
         for col in ("berth", "dia"):
             if set(item[col]) <= {"-"}:
                 item[col] = ""
-        item["duracao_janela"] = duracao_janela(item["liberacao_dry"], item["deadline"])
         navios.append(item)
-    # Mais próximo primeiro; sem deadline vai para o fim.
-    navios.sort(key=lambda x: (x["deadline"] == "", x["deadline"], x["previsao_chegada"]))
     return navios
 
 
-def salvar(navios, origem):
-    pasta = RAIZ / "data"
-    pasta.mkdir(exist_ok=True)
-    with open(pasta / "navios.csv", "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=SAIDA, delimiter=";")
-        w.writeheader()
-        w.writerows(navios)
-    # Horário do arquivo = momento em que a lista foi salva do site.
-    salvo_em = datetime.fromtimestamp(Path(origem).stat().st_mtime)
-    meta = {"atualizado_em": salvo_em.strftime("%Y-%m-%d %H:%M"),
-            "fonte": Path(origem).name, "navios": navios}
-    (pasta / "navios.json").write_text(
-        json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    gerar_painel(meta)
-
-
-def gerar_painel(meta, destino=None, documento_completo=True):
-    """Preenche o modelo com os dados. O modelo não tem <html>/<head> para
-    também servir como Artifact do claude.ai; para abrir no navegador ou no
-    GitHub, o arquivo ganha o esqueleto de documento."""
-    modelo = (RAIZ / "tools" / "painel.html").read_text(encoding="utf-8")
-    html = modelo.replace("/*DADOS*/null", json.dumps(meta, ensure_ascii=False))
-    if documento_completo:
-        html = ('<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n'
-                '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-                f'{html}\n</html>\n')
-    destino = Path(destino) if destino else RAIZ / "docs" / "index.html"
-    destino.parent.mkdir(exist_ok=True)
-    destino.write_text(html, encoding="utf-8")
-
-
 def main():
-    if sys.argv[1:] == ["--so-painel"]:
-        # Refaz só o painel com os dados já extraídos (após mudar o modelo).
-        gerar_painel(json.loads((RAIZ / "data" / "navios.json").read_text(encoding="utf-8")))
-        print("Painel regerado a partir de data/navios.json")
-        return
     if len(sys.argv) > 1:
         origem = Path(sys.argv[1])
     else:
@@ -254,7 +196,9 @@ def main():
             raise SystemExit("Nenhum PDF em entrada/. Passe o caminho do arquivo.")
         origem = pdfs[-1]
     navios = limpar(ler_pdf(origem))
-    salvar(navios, origem)
+    # Horário do arquivo = momento em que a lista foi salva do site.
+    salvo_em = datetime.fromtimestamp(origem.stat().st_mtime)
+    salvar_terminal(TERMINAL, navios, origem.name, salvo_em)
     print(f"{len(navios)} navios extraídos de {origem.name}")
 
 

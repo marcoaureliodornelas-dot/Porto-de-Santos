@@ -1,6 +1,18 @@
 {
-  "atualizado_em": "2026-10-10 14:01",
-  "fonte": "Relação de navios - Porto de Santos.pdf",
+  "terminais": [
+    {
+      "terminal": "DP World Santos",
+      "fonte": "https://www.embraportonline.com.br/Navios/Escala",
+      "atualizado_em": "2026-10-10 15:43",
+      "navios": 124
+    },
+    {
+      "terminal": "Tecon Santos",
+      "fonte": "Relação de navios - Porto de Santos.pdf",
+      "atualizado_em": "2026-10-10 14:01",
+      "navios": 160
+    }
+  ],
   "navios": [
     {
       "navio": "KOTA PAHLAWAN",
@@ -9,7 +21,19 @@
       "deadline": "2026-10-08 12:00",
       "previsao_chegada": "2026-10-09 14:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
+    },
+    {
+      "navio": "SEATTLE BRIDGE",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-08 18:00",
+      "previsao_chegada": "2026-10-10 12:00",
+      "liberacao_dry": "2026-10-06 19:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "1d 23h"
     },
     {
       "navio": "EVER LEADER",
@@ -18,7 +42,19 @@
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2026-10-04 00:00",
       "liberacao_dry": "2026-10-01 07:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "8d 5h"
+    },
+    {
+      "navio": "MAERSK FRANKFURT",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-09 12:00",
+      "previsao_chegada": "2026-10-10 19:00",
+      "liberacao_dry": "2026-10-06 01:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 11h"
     },
     {
       "navio": "COSCO SHIPPING CHILE",
@@ -27,7 +63,19 @@
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2026-10-10 19:00",
       "liberacao_dry": "2026-10-07 12:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 0h"
+    },
+    {
+      "navio": "JAZAN",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-09 12:00",
+      "previsao_chegada": "2026-10-12 23:59",
+      "liberacao_dry": "2026-10-07 09:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "2d 3h"
     },
     {
       "navio": "MSC GRACE",
@@ -36,6 +84,7 @@
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2028-10-12 05:13",
       "liberacao_dry": "2026-10-07 01:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 11h"
     },
     {
@@ -45,6 +94,7 @@
       "deadline": "2026-10-09 17:00",
       "previsao_chegada": "2026-10-11 16:00",
       "liberacao_dry": "2026-10-07 07:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 10h"
     },
     {
@@ -54,7 +104,19 @@
       "deadline": "2026-10-09 18:00",
       "previsao_chegada": "2026-10-14 23:00",
       "liberacao_dry": "2026-10-09 06:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "12h"
+    },
+    {
+      "navio": "PEDRO ALVARES CABRAL",
+      "berth": "ALCT1",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-11 16:00",
+      "liberacao_dry": "2026-10-06 19:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 17h"
     },
     {
       "navio": "LOG-IN ENDURANCE",
@@ -63,6 +125,7 @@
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-11 18:00",
       "liberacao_dry": "2026-10-06 19:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "3d 17h"
     },
     {
@@ -72,6 +135,7 @@
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 14:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -81,6 +145,7 @@
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 19:00",
       "liberacao_dry": "2026-10-08 12:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 0h"
     },
     {
@@ -90,6 +155,7 @@
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 23:02",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -99,7 +165,52 @@
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-13 05:30",
       "liberacao_dry": "2026-10-07 16:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 20h"
+    },
+    {
+      "navio": "MAERSK EVERGLADES",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-10-10 18:00",
+      "previsao_chegada": "2026-10-12 22:00",
+      "liberacao_dry": "2026-10-08 19:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "1d 23h"
+    },
+    {
+      "navio": "OKEE MIMI",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-12 09:00",
+      "previsao_chegada": "2026-10-12 18:00",
+      "liberacao_dry": "2026-10-08 19:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 14h"
+    },
+    {
+      "navio": "CAP SAN MALEAS",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-10-12 12:00",
+      "previsao_chegada": "2026-10-13 16:00",
+      "liberacao_dry": "2026-10-09 18:00",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": "2d 18h"
+    },
+    {
+      "navio": "MAERSK FREEPORT",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-12 18:00",
+      "previsao_chegada": "2026-10-13 22:00",
+      "liberacao_dry": "2026-10-11 18:00",
+      "liberacao_prevista": true,
+      "terminal": "DP World Santos",
+      "duracao_janela": "1d 0h"
     },
     {
       "navio": "LOG-IN JATOBA",
@@ -108,6 +219,7 @@
       "deadline": "2026-10-13 09:00",
       "previsao_chegada": "2026-10-13 18:00",
       "liberacao_dry": "2026-10-08 19:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "4d 14h"
     },
     {
@@ -117,6 +229,7 @@
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-12 20:00",
       "liberacao_dry": "2026-10-10 07:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "3d 5h"
     },
     {
@@ -126,6 +239,7 @@
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-14 05:01",
       "liberacao_dry": "2026-10-08 19:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "4d 17h"
     },
     {
@@ -135,6 +249,7 @@
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-14 12:00",
       "liberacao_dry": "2026-10-10 12:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "3d 0h"
     },
     {
@@ -144,6 +259,7 @@
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-16 12:00",
       "liberacao_dry": "2026-10-11 12:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "2d 0h"
     },
     {
@@ -153,7 +269,30 @@
       "deadline": "2026-10-13 18:00",
       "previsao_chegada": "2026-10-12 16:00",
       "liberacao_dry": "2026-10-07 18:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "6d 0h"
+    },
+    {
+      "navio": "SAN MARCO MAERSK",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-10-13 18:00",
+      "previsao_chegada": "2026-10-15 04:00",
+      "liberacao_dry": "2026-10-12 18:00",
+      "liberacao_prevista": true,
+      "terminal": "DP World Santos",
+      "duracao_janela": "1d 0h"
+    },
+    {
+      "navio": "NC BRISA",
+      "berth": "NORCOAST",
+      "dia": "QUINTA",
+      "deadline": "2026-10-14 12:00",
+      "previsao_chegada": "2026-10-14 11:00",
+      "liberacao_dry": "2026-10-10 22:00",
+      "liberacao_prevista": true,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 14h"
     },
     {
       "navio": "MERCOSUL ITAJAI",
@@ -162,7 +301,19 @@
       "deadline": "2026-10-14 12:00",
       "previsao_chegada": "2026-10-15 13:00",
       "liberacao_dry": "2026-10-11 12:00",
+      "terminal": "Tecon Santos",
       "duracao_janela": "3d 0h"
+    },
+    {
+      "navio": "VICENTE PINZON",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-10-14 17:00",
+      "previsao_chegada": "2026-10-15 22:00",
+      "liberacao_dry": "2026-10-11 13:00",
+      "liberacao_prevista": true,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 4h"
     },
     {
       "navio": "XIN WEI HAI",
@@ -171,6 +322,7 @@
       "deadline": "2026-10-15 12:00",
       "previsao_chegada": "2026-10-15 23:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -180,7 +332,19 @@
       "deadline": "2026-10-15 12:00",
       "previsao_chegada": "2026-10-17 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
+    },
+    {
+      "navio": "HMM SKY",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-10-15 18:00",
+      "previsao_chegada": "2026-10-16 10:00",
+      "liberacao_dry": "2026-10-12 01:00",
+      "liberacao_prevista": true,
+      "terminal": "DP World Santos",
+      "duracao_janela": "3d 17h"
     },
     {
       "navio": "SANTA INES",
@@ -189,6 +353,7 @@
       "deadline": "2026-10-15 18:00",
       "previsao_chegada": "2026-10-16 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -198,6 +363,7 @@
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-13 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -207,6 +373,7 @@
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-17 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -216,6 +383,29 @@
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-17 10:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "WIELAND",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-17 23:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "WIDE HOTEL",
+      "berth": "GOLFO",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-18 17:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -225,6 +415,7 @@
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-20 13:46",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -234,6 +425,29 @@
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-20 22:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE PIONEER",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-16 17:00",
+      "previsao_chegada": "2026-10-17 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SEASPAN EMPIRE",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-10-16 18:00",
+      "previsao_chegada": "2026-10-19 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -243,6 +457,18 @@
       "deadline": "2026-10-16 18:00",
       "previsao_chegada": "2026-10-27 09:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "FERNAO DE MAGALHAES",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-17 12:00",
+      "previsao_chegada": "2026-10-18 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -252,6 +478,18 @@
       "deadline": "2026-10-17 12:00",
       "previsao_chegada": "2026-10-18 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE SOREL",
+      "berth": "ECSA SHUTTLE",
+      "dia": "TERÇA",
+      "deadline": "2026-10-19 09:00",
+      "previsao_chegada": "2026-10-19 19:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -261,6 +499,18 @@
       "deadline": "2026-10-19 09:00",
       "previsao_chegada": "2026-10-19 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAP SAN ARTEMISSIO",
+      "berth": "NEOASAS",
+      "dia": "QUARTA",
+      "deadline": "2026-10-19 12:00",
+      "previsao_chegada": "2026-10-20 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -270,6 +520,7 @@
       "deadline": "2026-10-19 12:00",
       "previsao_chegada": "2026-10-20 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -279,6 +530,18 @@
       "deadline": "2026-10-19 12:00",
       "previsao_chegada": "2026-10-21 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE AZUL",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-19 18:00",
+      "previsao_chegada": "2026-10-20 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -288,6 +551,7 @@
       "deadline": "2026-10-19 18:00",
       "previsao_chegada": "2026-10-20 23:59",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -297,6 +561,7 @@
       "deadline": "2026-10-20 12:00",
       "previsao_chegada": "2026-10-21 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -306,6 +571,7 @@
       "deadline": "2026-10-20 12:00",
       "previsao_chegada": "2026-10-22 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -315,6 +581,7 @@
       "deadline": "2026-10-20 15:00",
       "previsao_chegada": "2026-10-21 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -324,6 +591,7 @@
       "deadline": "2026-10-21 12:00",
       "previsao_chegada": "2026-10-22 05:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -333,6 +601,18 @@
       "deadline": "2026-10-21 12:00",
       "previsao_chegada": "2026-10-22 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK GANGES",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-10-21 17:00",
+      "previsao_chegada": "2026-10-22 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -342,6 +622,7 @@
       "deadline": "2026-10-21 18:00",
       "previsao_chegada": "2026-10-22 10:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -351,6 +632,18 @@
       "deadline": "2026-10-22 12:00",
       "previsao_chegada": "2026-10-23 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM PLATINUM",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-10-22 18:00",
+      "previsao_chegada": "2026-10-23 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -360,6 +653,29 @@
       "deadline": "2026-10-22 18:00",
       "previsao_chegada": "2026-10-23 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "ONE GEORGE WASHINGTON",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-22 18:00",
+      "previsao_chegada": "2026-10-23 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FREEPORT",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-23 12:00",
+      "previsao_chegada": "2026-10-24 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -369,6 +685,18 @@
       "deadline": "2026-10-23 12:00",
       "previsao_chegada": "2026-10-26 09:45",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SANTA VANESSA",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-23 17:00",
+      "previsao_chegada": "2026-10-24 11:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -378,6 +706,18 @@
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-10-25 15:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "DUSSELDORF EXPRESS",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-10-23 18:00",
+      "previsao_chegada": "2026-10-26 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -387,6 +727,7 @@
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-10-28 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -396,6 +737,29 @@
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-11-03 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI VOYAGER",
+      "berth": "FIL",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-24 12:00",
+      "previsao_chegada": "2026-10-25 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "AMERICO VESPUCIO",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-24 12:00",
+      "previsao_chegada": "2026-10-25 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -405,6 +769,18 @@
       "deadline": "2026-10-24 12:00",
       "previsao_chegada": "2026-10-25 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI TOKYO",
+      "berth": "SX2",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-24 12:00",
+      "previsao_chegada": "2026-10-26 11:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -414,6 +790,18 @@
       "deadline": "2026-10-26 09:00",
       "previsao_chegada": "2026-10-26 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "ZIM BANGKOK",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-10-26 12:00",
+      "previsao_chegada": "2026-10-26 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -423,6 +811,7 @@
       "deadline": "2026-10-26 12:00",
       "previsao_chegada": "2026-10-27 01:10",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -432,6 +821,7 @@
       "deadline": "2026-10-26 12:00",
       "previsao_chegada": "2026-10-27 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -441,6 +831,18 @@
       "deadline": "2026-10-26 18:00",
       "previsao_chegada": "2026-10-26 02:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE ALEGRE",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-26 18:00",
+      "previsao_chegada": "2026-10-27 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -450,6 +852,7 @@
       "deadline": "2026-10-26 18:00",
       "previsao_chegada": "2026-10-27 23:59",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -459,6 +862,7 @@
       "deadline": "2026-10-27 12:00",
       "previsao_chegada": "2026-10-28 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -468,6 +872,40 @@
       "deadline": "2026-10-27 12:00",
       "previsao_chegada": "2026-10-29 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM PRESTIGE",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-10-27 12:00",
+      "previsao_chegada": "2026-10-30 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN ANTONIO MAERSK",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-10-27 18:00",
+      "previsao_chegada": "2026-10-29 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "NC BRAVO",
+      "berth": "NORCOAST",
+      "dia": "QUINTA",
+      "deadline": "2026-10-28 12:00",
+      "previsao_chegada": "2026-10-28 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -477,6 +915,7 @@
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -486,6 +925,7 @@
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 09:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -495,6 +935,18 @@
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "BARTOLOMEU DIAS",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-10-28 17:00",
+      "previsao_chegada": "2026-10-29 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -504,6 +956,7 @@
       "deadline": "2026-10-29 18:00",
       "previsao_chegada": "2026-10-30 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -513,6 +966,29 @@
       "deadline": "2026-10-30 12:00",
       "previsao_chegada": "2026-10-31 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE AZUL",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-30 12:00",
+      "previsao_chegada": "2026-10-31 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE PIONEER",
+      "berth": "GOLFO",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-30 12:00",
+      "previsao_chegada": "2026-11-01 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -522,6 +998,40 @@
       "deadline": "2026-10-30 12:00",
       "previsao_chegada": "2026-11-02 07:48",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "PALENA",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-30 17:00",
+      "previsao_chegada": "2026-10-31 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "LORI",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-10-30 18:00",
+      "previsao_chegada": "2026-11-02 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SEBASTIAO CABOTO",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-31 12:00",
+      "previsao_chegada": "2026-11-01 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -531,6 +1041,18 @@
       "deadline": "2026-10-31 12:00",
       "previsao_chegada": "2026-11-01 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK JAIPUR",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-31 18:00",
+      "previsao_chegada": "2026-11-02 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -540,6 +1062,7 @@
       "deadline": "2026-11-02 09:00",
       "previsao_chegada": "2026-11-02 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -549,6 +1072,18 @@
       "deadline": "2026-11-02 10:00",
       "previsao_chegada": "2026-11-03 05:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN MARCO MAERSK",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-11-02 12:00",
+      "previsao_chegada": "2026-11-03 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -558,6 +1093,18 @@
       "deadline": "2026-11-02 12:00",
       "previsao_chegada": "2026-11-03 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "STEPHANIE C",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-02 12:00",
+      "previsao_chegada": "2026-11-03 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -567,6 +1114,7 @@
       "deadline": "2026-11-02 12:00",
       "previsao_chegada": "2026-11-16 07:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -576,6 +1124,7 @@
       "deadline": "2026-11-02 18:00",
       "previsao_chegada": "2026-11-05 17:02",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -585,6 +1134,7 @@
       "deadline": "2026-11-03 12:00",
       "previsao_chegada": "2026-11-04 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -594,6 +1144,29 @@
       "deadline": "2026-11-03 12:00",
       "previsao_chegada": "2026-11-05 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN AUGUSTIN MAERSK",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-11-03 18:00",
+      "previsao_chegada": "2026-11-05 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "NC BRUMA",
+      "berth": "NORCOAST",
+      "dia": "QUINTA",
+      "deadline": "2026-11-04 12:00",
+      "previsao_chegada": "2026-11-04 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -603,6 +1176,18 @@
       "deadline": "2026-11-04 12:00",
       "previsao_chegada": "2026-11-05 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "VICENTE PINZON",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-11-04 17:00",
+      "previsao_chegada": "2026-11-05 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -612,6 +1197,7 @@
       "deadline": "2026-11-05 12:00",
       "previsao_chegada": "2026-11-07 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -621,6 +1207,29 @@
       "deadline": "2026-11-05 18:00",
       "previsao_chegada": "2026-11-06 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "YM MOBILITY",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-05 18:00",
+      "previsao_chegada": "2026-11-06 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM BANGKOK",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-05 18:00",
+      "previsao_chegada": "2026-11-06 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -630,6 +1239,29 @@
       "deadline": "2026-11-06 12:00",
       "previsao_chegada": "2026-11-07 04:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE ALEGRE",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-06 12:00",
+      "previsao_chegada": "2026-11-07 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SANTA VANESSA",
+      "berth": "GOLFO",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-06 12:00",
+      "previsao_chegada": "2026-11-08 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -639,6 +1271,18 @@
       "deadline": "2026-11-06 12:00",
       "previsao_chegada": "2026-11-09 11:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "DALIAN EXPRESS",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-06 17:00",
+      "previsao_chegada": "2026-11-07 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -648,6 +1292,7 @@
       "deadline": "2026-11-06 18:00",
       "previsao_chegada": "2026-11-08 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -657,6 +1302,40 @@
       "deadline": "2026-11-06 18:00",
       "previsao_chegada": "2026-11-08 21:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK REDWOOD",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-11-06 18:00",
+      "previsao_chegada": "2026-11-09 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "PEDRO ALVARES CABRAL",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-07 12:00",
+      "previsao_chegada": "2026-11-08 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "OKEE MIMI",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-07 18:00",
+      "previsao_chegada": "2026-11-09 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -666,6 +1345,7 @@
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-09 02:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -675,6 +1355,7 @@
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-10 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -684,6 +1365,18 @@
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-20 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FORTALEZA",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-09 18:00",
+      "previsao_chegada": "2026-11-10 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -693,6 +1386,7 @@
       "deadline": "2026-11-09 18:00",
       "previsao_chegada": "2026-11-12 14:27",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -702,6 +1396,7 @@
       "deadline": "2026-11-10 12:00",
       "previsao_chegada": "2026-11-11 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -711,6 +1406,40 @@
       "deadline": "2026-11-10 12:00",
       "previsao_chegada": "2026-11-12 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI DYNASTY",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-11-10 12:00",
+      "previsao_chegada": "2026-11-13 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN NICOLAS MAERSK",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-11-10 18:00",
+      "previsao_chegada": "2026-11-12 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "NC BREDA",
+      "berth": "NORCOAST",
+      "dia": "QUINTA",
+      "deadline": "2026-11-11 12:00",
+      "previsao_chegada": "2026-11-11 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -720,6 +1449,18 @@
       "deadline": "2026-11-11 12:00",
       "previsao_chegada": "2026-11-12 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK GANGES",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-11-11 17:00",
+      "previsao_chegada": "2026-11-12 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -729,6 +1470,29 @@
       "deadline": "2026-11-12 18:00",
       "previsao_chegada": "2026-11-13 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM JAKARTA",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-12 18:00",
+      "previsao_chegada": "2026-11-13 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "STEPHANIE C",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-13 12:00",
+      "previsao_chegada": "2026-11-14 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -738,6 +1502,51 @@
       "deadline": "2026-11-13 12:00",
       "previsao_chegada": "2026-11-16 10:52",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "LE HAVRE EXPRESS",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-13 17:00",
+      "previsao_chegada": "2026-11-14 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK ACADIA",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-11-13 18:00",
+      "previsao_chegada": "2026-11-16 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "FERNAO DE MAGALHAES",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-14 12:00",
+      "previsao_chegada": "2026-11-15 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE SOREL",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-14 18:00",
+      "previsao_chegada": "2026-11-16 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -747,6 +1556,7 @@
       "deadline": "2026-11-16 09:00",
       "previsao_chegada": "2026-11-16 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -756,6 +1566,18 @@
       "deadline": "2026-11-16 10:00",
       "previsao_chegada": "2026-11-17 05:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN ANTONIO MAERSK",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-11-16 12:00",
+      "previsao_chegada": "2026-11-17 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -765,6 +1587,7 @@
       "deadline": "2026-11-16 12:00",
       "previsao_chegada": "2026-11-17 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -774,6 +1597,18 @@
       "deadline": "2026-11-16 18:00",
       "previsao_chegada": "2026-11-17 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FRANKFURT",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-16 18:00",
+      "previsao_chegada": "2026-11-17 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -783,6 +1618,7 @@
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-18 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -792,6 +1628,7 @@
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-18 14:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -801,6 +1638,51 @@
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-19 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM JUNIPER",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-11-17 12:00",
+      "previsao_chegada": "2026-11-20 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI FAITH",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-11-17 12:00",
+      "previsao_chegada": "2026-11-20 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK SAN VINCENT",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-11-17 18:00",
+      "previsao_chegada": "2026-11-19 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "NC BRISA",
+      "berth": "NORCOAST",
+      "dia": "QUINTA",
+      "deadline": "2026-11-18 12:00",
+      "previsao_chegada": "2026-11-18 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -810,6 +1692,18 @@
       "deadline": "2026-11-18 12:00",
       "previsao_chegada": "2029-11-19 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "BARTOLOMEU DIAS",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-11-18 17:00",
+      "previsao_chegada": "2026-11-19 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -819,6 +1713,7 @@
       "deadline": "2026-11-18 18:00",
       "previsao_chegada": "2026-11-19 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -828,6 +1723,18 @@
       "deadline": "2026-11-19 12:00",
       "previsao_chegada": "2026-11-20 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "YM MODERATION",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-19 18:00",
+      "previsao_chegada": "2026-11-20 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -837,6 +1744,95 @@
       "deadline": "2026-11-20 12:00",
       "previsao_chegada": "2026-11-21 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FORTALEZA",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-20 12:00",
+      "previsao_chegada": "2026-11-21 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "DALIAN EXPRESS",
+      "berth": "GOLFO",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-20 12:00",
+      "previsao_chegada": "2026-11-21 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "PALENA",
+      "berth": "GOLFO",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-20 12:00",
+      "previsao_chegada": "2026-11-22 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "COSTA RICA EXPRESS",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-20 17:00",
+      "previsao_chegada": "2026-11-21 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SEASPAN EMISSARY",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-11-20 18:00",
+      "previsao_chegada": "2026-11-23 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "AMERICO VESPUCIO",
+      "berth": "ALCT1",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-21 12:00",
+      "previsao_chegada": "2026-11-22 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN AUGUSTIN MAERSK",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-11-23 12:00",
+      "previsao_chegada": "2026-11-24 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "WIELAND",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-23 18:00",
+      "previsao_chegada": "2026-11-24 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -846,6 +1842,40 @@
       "deadline": "2026-11-24 12:00",
       "previsao_chegada": "2026-11-25 05:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM PREMIUM",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-11-24 12:00",
+      "previsao_chegada": "2026-11-27 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "ZIM USA",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-11-24 18:00",
+      "previsao_chegada": "2026-11-26 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAP SAN TAINARO",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-11-24 18:00",
+      "previsao_chegada": "2026-11-26 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -855,6 +1885,18 @@
       "deadline": "2026-11-25 12:00",
       "previsao_chegada": "2026-11-26 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "VICENTE PINZON",
+      "berth": "ALCT2",
+      "dia": "SEXTA",
+      "deadline": "2026-11-25 17:00",
+      "previsao_chegada": "2026-11-26 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -864,6 +1906,7 @@
       "deadline": "2026-11-26 12:00",
       "previsao_chegada": "2026-11-28 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -873,6 +1916,40 @@
       "deadline": "2026-11-26 18:00",
       "previsao_chegada": "2026-11-27 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "ONE MAXIM",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-26 18:00",
+      "previsao_chegada": "2026-11-27 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FRANKFURT",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-27 12:00",
+      "previsao_chegada": "2026-11-29 01:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "LE HAVRE EXPRESS",
+      "berth": "GOLFO",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-27 12:00",
+      "previsao_chegada": "2026-11-29 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -882,6 +1959,18 @@
       "deadline": "2026-11-27 12:00",
       "previsao_chegada": "2026-11-30 07:49",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MSC UNIFIC VI",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-27 17:00",
+      "previsao_chegada": "2026-11-28 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -891,6 +1980,51 @@
       "deadline": "2026-11-27 18:00",
       "previsao_chegada": "2026-11-28 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK EVERGLADES",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-11-27 18:00",
+      "previsao_chegada": "2026-11-30 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK JAIPUR",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-28 18:00",
+      "previsao_chegada": "2026-11-30 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN NICOLAS MAERSK",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-11-30 12:00",
+      "previsao_chegada": "2026-12-01 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FREEPORT",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-30 18:00",
+      "previsao_chegada": "2026-12-01 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -900,6 +2034,18 @@
       "deadline": "2026-12-01 12:00",
       "previsao_chegada": "2026-12-03 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN FRANCISCA",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-12-01 18:00",
+      "previsao_chegada": "2026-12-03 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -909,6 +2055,51 @@
       "deadline": "2026-12-03 18:00",
       "previsao_chegada": "2026-12-04 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "ONE MAGNIFICENCE",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-12-03 18:00",
+      "previsao_chegada": "2026-12-04 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "WIELAND",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-04 12:00",
+      "previsao_chegada": "2026-12-05 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "COSTA RICA EXPRESS",
+      "berth": "GOLFO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-04 12:00",
+      "previsao_chegada": "2026-12-05 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "JAZAN",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-12-04 17:00",
+      "previsao_chegada": "2026-12-05 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -918,6 +2109,40 @@
       "deadline": "2026-12-04 18:00",
       "previsao_chegada": "2026-12-06 21:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SEASPAN EMPIRE",
+      "berth": "CONOSUR",
+      "dia": "TERÇA",
+      "deadline": "2026-12-04 18:00",
+      "previsao_chegada": "2026-12-07 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "OKEE MIMI",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-12-05 18:00",
+      "previsao_chegada": "2026-12-07 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK SAN VINCENT",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-12-07 12:00",
+      "previsao_chegada": "2026-12-08 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -927,6 +2152,106 @@
       "deadline": "2026-12-07 12:00",
       "previsao_chegada": "2026-12-09 04:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE AZUL",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-12-07 18:00",
+      "previsao_chegada": "2026-12-08 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI GRACE",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-12-08 12:00",
+      "previsao_chegada": "2026-12-11 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HYUNDAI HONGKONG",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-12-08 12:00",
+      "previsao_chegada": "2026-12-11 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "GREENHOUSE",
+      "berth": "SX2",
+      "dia": "SÁBADO",
+      "deadline": "2026-12-10 18:00",
+      "previsao_chegada": "2026-12-11 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FREEPORT",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-11 12:00",
+      "previsao_chegada": "2026-12-12 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MSC UNIFIC VI",
+      "berth": "GOLFO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-11 12:00",
+      "previsao_chegada": "2026-12-12 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "WIDE HOTEL",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-12-11 17:00",
+      "previsao_chegada": "2026-12-12 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE SOREL",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-12-12 18:00",
+      "previsao_chegada": "2026-12-14 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAP SAN TAINARO",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-12-14 12:00",
+      "previsao_chegada": "2026-12-15 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -936,6 +2261,29 @@
       "deadline": "2026-12-14 12:00",
       "previsao_chegada": "2026-12-16 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE ALEGRE",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-12-14 18:00",
+      "previsao_chegada": "2026-12-15 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN LORENZO MAERSK",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-12-15 18:00",
+      "previsao_chegada": "2026-12-07 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -945,6 +2293,7 @@
       "deadline": "2026-12-17 12:00",
       "previsao_chegada": "2026-12-18 13:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -954,6 +2303,29 @@
       "deadline": "2026-12-17 18:00",
       "previsao_chegada": "2026-12-18 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE AZUL",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-18 12:00",
+      "previsao_chegada": "2026-12-19 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "SAN FRANCISCA",
+      "berth": "NEOASAS",
+      "dia": "TERÇA",
+      "deadline": "2026-12-21 12:00",
+      "previsao_chegada": "2026-12-22 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -963,6 +2335,7 @@
       "deadline": "2026-12-21 12:00",
       "previsao_chegada": "2026-12-23 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -972,6 +2345,40 @@
       "deadline": "2026-12-21 12:00",
       "previsao_chegada": "2026-12-23 11:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "STEPHANIE C",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-12-21 18:00",
+      "previsao_chegada": "2026-12-22 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "HMM PRIVILEGE",
+      "berth": "FIL",
+      "dia": "SEXTA",
+      "deadline": "2026-12-22 12:00",
+      "previsao_chegada": "2026-12-25 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK SAN LAZARO",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-12-22 18:00",
+      "previsao_chegada": "2026-12-24 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -981,6 +2388,40 @@
       "deadline": "2026-12-23 12:00",
       "previsao_chegada": "2026-12-25 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK MONTE ALEGRE",
+      "berth": "TANGO",
+      "dia": "DOMINGO",
+      "deadline": "2026-12-25 12:00",
+      "previsao_chegada": "2026-12-26 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAPE PIONEER",
+      "berth": "GOLFO",
+      "dia": "SÁBADO",
+      "deadline": "2026-12-25 17:00",
+      "previsao_chegada": "2026-12-26 10:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK JAIPUR",
+      "berth": "ECSA SHUTTLE",
+      "dia": "SEGUNDA",
+      "deadline": "2026-12-26 18:00",
+      "previsao_chegada": "2026-12-28 16:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -990,6 +2431,40 @@
       "deadline": "2026-12-28 12:00",
       "previsao_chegada": "2026-12-30 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK FORTALEZA",
+      "berth": "TANGO",
+      "dia": "QUARTA",
+      "deadline": "2026-12-28 18:00",
+      "previsao_chegada": "2026-12-29 22:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "MAERSK SAN JUAN",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-12-29 18:00",
+      "previsao_chegada": "2026-12-31 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "CAP SAN MALEAS",
+      "berth": "NEOASAS",
+      "dia": "QUINTA",
+      "deadline": "2026-12-29 18:00",
+      "previsao_chegada": "2026-12-31 04:00",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -999,6 +2474,18 @@
       "deadline": "",
       "previsao_chegada": "2026-10-21 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
+      "duracao_janela": ""
+    },
+    {
+      "navio": "NAVIOS AMARILLO",
+      "berth": "SPOT",
+      "dia": "QUINTA",
+      "deadline": "",
+      "previsao_chegada": "2026-10-22 05:30",
+      "liberacao_dry": "",
+      "liberacao_prevista": false,
+      "terminal": "DP World Santos",
       "duracao_janela": ""
     },
     {
@@ -1008,6 +2495,7 @@
       "deadline": "",
       "previsao_chegada": "2026-10-24 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1017,6 +2505,7 @@
       "deadline": "",
       "previsao_chegada": "2026-10-28 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1026,6 +2515,7 @@
       "deadline": "",
       "previsao_chegada": "2026-10-29 19:03",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1035,6 +2525,7 @@
       "deadline": "",
       "previsao_chegada": "2026-10-31 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1044,6 +2535,7 @@
       "deadline": "",
       "previsao_chegada": "2026-10-31 22:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1053,6 +2545,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-02 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1062,6 +2555,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-03 00:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1071,6 +2565,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-04 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1080,6 +2575,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-04 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1089,6 +2585,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-07 02:01",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1098,6 +2595,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-08 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1107,6 +2605,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-09 07:48",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1116,6 +2615,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-09 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1125,6 +2625,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-10 23:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1134,6 +2635,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-11 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1143,6 +2645,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-15 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1152,6 +2655,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-17 23:59",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1161,6 +2665,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-18 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1170,6 +2675,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-20 11:30",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1179,6 +2685,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-24 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1188,6 +2695,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-27 12:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1197,6 +2705,7 @@
       "deadline": "",
       "previsao_chegada": "2026-11-27 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1206,6 +2715,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-01 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1215,6 +2725,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-02 17:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1224,6 +2735,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-02 18:37",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1233,6 +2745,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-04 02:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1242,6 +2755,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-05 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1251,6 +2765,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-05 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1260,6 +2775,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-05 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1269,6 +2785,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-06 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1278,6 +2795,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-12 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1287,6 +2805,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-12 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1296,6 +2815,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-13 01:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1305,6 +2825,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-17 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1314,6 +2835,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-17 10:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1323,6 +2845,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-19 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1332,6 +2855,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-24 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1341,6 +2865,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-26 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1350,6 +2875,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-26 18:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1359,6 +2885,7 @@
       "deadline": "",
       "previsao_chegada": "2026-12-31 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1368,6 +2895,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-02 06:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1377,6 +2905,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-07 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1386,6 +2915,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-08 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1395,6 +2925,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-14 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1404,6 +2935,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-15 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1413,6 +2945,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-16 07:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1422,6 +2955,7 @@
       "deadline": "",
       "previsao_chegada": "2027-01-29 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1431,6 +2965,7 @@
       "deadline": "",
       "previsao_chegada": "2027-02-05 19:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     },
     {
@@ -1440,6 +2975,7 @@
       "deadline": "",
       "previsao_chegada": "2028-09-10 00:00",
       "liberacao_dry": "",
+      "terminal": "Tecon Santos",
       "duracao_janela": ""
     }
   ]
