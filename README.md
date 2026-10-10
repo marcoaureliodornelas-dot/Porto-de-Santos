@@ -38,6 +38,14 @@ refaz o painel e envia para o GitHub (só faz commit se algo mudou).
 Depois de mudar o visual (`tools/painel.html`), refaça só o painel:
 `python tools/consolidar.py`.
 
+## Publicação na Vercel
+
+O repositório está ligado à Vercel: cada envio para `main` publica o painel.
+O `vercel.json` publica só a pasta `docs/` como site estático, sem build; o
+Python roda apenas no computador que coleta os dados (por isso o
+`requirements.txt` fica em `tools/`, e não na raiz, onde a Vercel o
+confundiria com uma aplicação Python).
+
 ## Arquivos gerados
 
 | Arquivo | Conteúdo |
@@ -50,5 +58,5 @@ Depois de mudar o visual (`tools/painel.html`), refaça só o painel:
 ## Instalação
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r tools/requirements.txt
 ```

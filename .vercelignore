@@ -1,0 +1,4 @@
+# Só o painel (docs/) é publicado na Vercel.
+/*
+!/docs
+!/vercel.json

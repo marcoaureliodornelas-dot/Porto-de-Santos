@@ -31,3 +31,6 @@ build/
 # PDFs baixados do site (entrada da ferramenta)
 entrada/
 data/.ultimo_pdf
+
+# Vercel (link local do projeto)
+.vercel/
