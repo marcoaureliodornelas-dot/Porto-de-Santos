@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navios Tecon Santos</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b2430; --muted: #5d6b7c;
+    --line: #e1e5ea; --accent: #0b5cad; --head: #eef2f6;
+    --late-bg: #fdecec; --late: #b42318; --soon-bg: #fff6e0; --soon: #93600a;
+    --ok: #1a7f4b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f141a; --card: #171e26; --text: #e6ebf1; --muted: #9aa7b6;
+      --line: #2a3440; --accent: #6fb1ff; --head: #1e2731;
+      --late-bg: #3a1a1a; --late: #ff9b91; --soon-bg: #3a2e12; --soon: #f5c66b;
+      --ok: #6fd39d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f141a; --card: #171e26; --text: #e6ebf1; --muted: #9aa7b6;
+    --line: #2a3440; --accent: #6fb1ff; --head: #1e2731;
+    --late-bg: #3a1a1a; --late: #ff9b91; --soon-bg: #3a2e12; --soon: #f5c66b;
+    --ok: #6fd39d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+  input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line);
+         border-radius: 8px; background: var(--card); color: var(--text); font: inherit; }
+  button, label.chk { padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
+         background: var(--card); color: var(--text); font: inherit; cursor: pointer; }
+  label.chk { display: inline-flex; gap: 6px; align-items: center; }
+  .legenda { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+  .legenda span::before { content: ""; display: inline-block; width: 10px; height: 10px;
+         border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .lg-late::before { background: var(--late); } .lg-soon::before { background: var(--soon); }
+  .tabela { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 760px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { background: var(--head); font-weight: 600; cursor: pointer; user-select: none; position: sticky; top: 0; }
+  th .seta { color: var(--accent); margin-left: 4px; }
+  td.navio { font-weight: 600; white-space: normal; }
+  td.data, td.duracao_janela { font-variant-numeric: tabular-nums; }
+  tr.late td.deadline { background: var(--late-bg); color: var(--late); font-weight: 600; }
+  tr.soon td.deadline { background: var(--soon-bg); color: var(--soon); font-weight: 600; }
+  td.vazio { color: var(--muted); }
+  .rodape { color: var(--muted); font-size: 13px; margin-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Recebimento de exportação · Tecon Santos</h1>
+  <p class="sub" id="sub"></p>
+
+  <div class="barra">
+    <input type="search" id="busca" placeholder="Buscar navio, berth ou dia">
+    <button id="ordem"></button>
+    <label class="chk"><input type="checkbox" id="vencidos"> Mostrar deadlines vencidos</label>
+  </div>
+  <div class="legenda">
+    <span class="lg-late">Deadline vencido</span>
+    <span class="lg-soon">Deadline nas próximas 48 h</span>
+  </div>
+
+  <div class="tabela"><table>
+    <thead><tr id="cab"></tr></thead>
+    <tbody id="corpo"></tbody>
+  </table></div>
+  <p class="rodape" id="rodape"></p>
+</main>
+<script>
+const DADOS = /*DADOS*/null;
+
+const COLS = [
+  ["navio", "Navio"], ["berth", "Berth"], ["dia", "Dia"],
+  ["deadline", "Deadline"], ["previsao_chegada", "Previsão de chegada"],
+  ["liberacao_dry", "Liberação do dry"], ["duracao_janela", "Duração da janela"],
+];
+const DATAS = new Set(["deadline", "previsao_chegada", "liberacao_dry"]);
+const estado = { col: "deadline", asc: true, busca: "", vencidos: false };
+
+function lerPref() {
+  try { Object.assign(estado, JSON.parse(localStorage.getItem("painel-navios") || "{}"), { busca: "" }); } catch (_) {}
+}
+function salvarPref() {
+  try { localStorage.setItem("painel-navios", JSON.stringify({ col: estado.col, asc: estado.asc, vencidos: estado.vencidos })); } catch (_) {}
+}
+
+function paraDate(s) { return s ? new Date(s.replace(" ", "T")) : null; }
+function fmt(s) {
+  if (!s) return "";
+  const [d, h] = s.split(" "); const [a, m, dia] = d.split("-");
+  return `${dia}/${m}/${a.slice(2)} ${h}`;
+}
+
+// Minutos entre a liberação do dry e o deadline (para ordenar a janela).
+function janelaMin(n) {
+  const a = paraDate(n.liberacao_dry), b = paraDate(n.deadline);
+  return a && b ? (b - a) / 60000 : null;
+}
+function valorOrdem(n, c) { return c === "duracao_janela" ? janelaMin(n) : n[c] || null; }
+
+function render() {
+  const agora = new Date();
+  const lim48 = new Date(agora.getTime() + 48 * 3600e3);
+  const q = estado.busca.trim().toUpperCase();
+  let linhas = DADOS.navios.filter(n => {
+    if (q && !`${n.navio} ${n.berth} ${n.dia}`.includes(q)) return false;
+    const dl = paraDate(n.deadline);
+    if (!estado.vencidos && dl && dl < agora) return false;
+    return true;
+  });
+  const c = estado.col, dir = estado.asc ? 1 : -1;
+  linhas.sort((a, b) => {
+    const va = valorOrdem(a, c), vb = valorOrdem(b, c);
+    // Vazios sempre no fim, em qualquer direção.
+    if (va === null && vb === null) return 0;
+    if (va === null) return 1;
+    if (vb === null) return -1;
+    return (typeof va === "number" ? va - vb : va.localeCompare(vb, "pt-BR")) * dir;
+  });
+
+  document.getElementById("cab").innerHTML = COLS.map(([k, t]) =>
+    `<th data-col="${k}">${t}${k === c ? `<span class="seta">${estado.asc ? "▲" : "▼"}</span>` : ""}</th>`).join("");
+  document.getElementById("corpo").innerHTML = linhas.map(n => {
+    const dl = paraDate(n.deadline);
+    const cls = dl && dl < agora ? "late" : dl && dl < lim48 ? "soon" : "";
+    return `<tr class="${cls}">` + COLS.map(([k]) => {
+      const v = DATAS.has(k) ? fmt(n[k]) : n[k];
+      return `<td class="${k}${DATAS.has(k) ? " data" : ""}${v ? "" : " vazio"}">${v || "—"}</td>`;
+    }).join("") + "</tr>";
+  }).join("") || `<tr><td colspan="7" class="vazio">Nenhum navio encontrado.</td></tr>`;
+
+  const titulo = COLS.find(([k]) => k === c)[1];
+  document.getElementById("ordem").textContent = DATAS.has(c)
+    ? `${titulo}: ${estado.asc ? "mais próximo primeiro" : "mais distante primeiro"}`
+    : c === "duracao_janela"
+      ? `${titulo}: ${estado.asc ? "mais curta primeiro" : "mais longa primeiro"}`
+      : `${titulo}: ${estado.asc ? "A → Z" : "Z → A"}`;
+  document.getElementById("rodape").textContent =
+    `${linhas.length} de ${DADOS.navios.length} navios exibidos · clique no título de uma coluna para ordenar por ela.`;
+}
+
+function iniciar() {
+  if (!DADOS) { document.getElementById("sub").textContent = "Sem dados: rode tools/extrair_lista.py."; return; }
+  lerPref();
+  const [d, h] = DADOS.atualizado_em.split(" "); const [a, m, dia] = d.split("-");
+  document.getElementById("sub").textContent = `Atualizado em ${dia}/${m}/${a} às ${h} · fonte: ${DADOS.fonte}`;
+  document.getElementById("vencidos").checked = estado.vencidos;
+  document.getElementById("cab").addEventListener("click", e => {
+    const th = e.target.closest("th"); if (!th) return;
+    if (estado.col === th.dataset.col) estado.asc = !estado.asc;
+    else { estado.col = th.dataset.col; estado.asc = true; }
+    salvarPref(); render();
+  });
+  document.getElementById("ordem").addEventListener("click", () => { estado.asc = !estado.asc; salvarPref(); render(); });
+  document.getElementById("busca").addEventListener("input", e => { estado.busca = e.target.value; render(); });
+  document.getElementById("vencidos").addEventListener("change", e => { estado.vencidos = e.target.checked; salvarPref(); render(); });
+  render();
+}
+iniciar();
+</script>
+</body>
+</html>

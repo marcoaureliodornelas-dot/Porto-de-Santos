@@ -8,7 +8,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-08 12:00",
       "previsao_chegada": "2026-10-09 14:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER LEADER",
@@ -16,7 +17,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2026-10-04 00:00",
-      "liberacao_dry": "2026-10-01 07:00"
+      "liberacao_dry": "2026-10-01 07:00",
+      "duracao_janela": "8d 5h"
     },
     {
       "navio": "COSCO SHIPPING CHILE",
@@ -24,7 +26,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2026-10-10 19:00",
-      "liberacao_dry": "2026-10-07 12:00"
+      "liberacao_dry": "2026-10-07 12:00",
+      "duracao_janela": "2d 0h"
     },
     {
       "navio": "MSC GRACE",
@@ -32,7 +35,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-09 12:00",
       "previsao_chegada": "2028-10-12 05:13",
-      "liberacao_dry": "2026-10-07 01:00"
+      "liberacao_dry": "2026-10-07 01:00",
+      "duracao_janela": "2d 11h"
     },
     {
       "navio": "NYK RUMINA",
@@ -40,7 +44,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-09 17:00",
       "previsao_chegada": "2026-10-11 16:00",
-      "liberacao_dry": "2026-10-07 07:00"
+      "liberacao_dry": "2026-10-07 07:00",
+      "duracao_janela": "2d 10h"
     },
     {
       "navio": "MSC STELLA MX",
@@ -48,7 +53,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-09 18:00",
       "previsao_chegada": "2026-10-14 23:00",
-      "liberacao_dry": "2026-10-09 06:00"
+      "liberacao_dry": "2026-10-09 06:00",
+      "duracao_janela": "12h"
     },
     {
       "navio": "LOG-IN ENDURANCE",
@@ -56,7 +62,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-11 18:00",
-      "liberacao_dry": "2026-10-06 19:00"
+      "liberacao_dry": "2026-10-06 19:00",
+      "duracao_janela": "3d 17h"
     },
     {
       "navio": "MSC BUSAN VIII",
@@ -64,7 +71,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 14:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SUAPE",
@@ -72,7 +80,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 19:00",
-      "liberacao_dry": "2026-10-08 12:00"
+      "liberacao_dry": "2026-10-08 12:00",
+      "duracao_janela": "2d 0h"
     },
     {
       "navio": "MSC LETIZIA",
@@ -80,7 +89,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-12 23:02",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SPYROS V",
@@ -88,7 +98,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-10 12:00",
       "previsao_chegada": "2026-10-13 05:30",
-      "liberacao_dry": "2026-10-07 16:00"
+      "liberacao_dry": "2026-10-07 16:00",
+      "duracao_janela": "2d 20h"
     },
     {
       "navio": "LOG-IN JATOBA",
@@ -96,7 +107,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-13 09:00",
       "previsao_chegada": "2026-10-13 18:00",
-      "liberacao_dry": "2026-10-08 19:00"
+      "liberacao_dry": "2026-10-08 19:00",
+      "duracao_janela": "4d 14h"
     },
     {
       "navio": "KOTA ELAN",
@@ -104,7 +116,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-12 20:00",
-      "liberacao_dry": "2026-10-10 07:00"
+      "liberacao_dry": "2026-10-10 07:00",
+      "duracao_janela": "3d 5h"
     },
     {
       "navio": "MERCOSUL FORTALEZA",
@@ -112,7 +125,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-14 05:01",
-      "liberacao_dry": "2026-10-08 19:00"
+      "liberacao_dry": "2026-10-08 19:00",
+      "duracao_janela": "4d 17h"
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -120,7 +134,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-14 12:00",
-      "liberacao_dry": "2026-10-10 12:00"
+      "liberacao_dry": "2026-10-10 12:00",
+      "duracao_janela": "3d 0h"
     },
     {
       "navio": "CMA CGM FRANCOISE SAGAN",
@@ -128,7 +143,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-13 12:00",
       "previsao_chegada": "2026-10-16 12:00",
-      "liberacao_dry": "2026-10-11 12:00"
+      "liberacao_dry": "2026-10-11 12:00",
+      "duracao_janela": "2d 0h"
     },
     {
       "navio": "NORWALK",
@@ -136,7 +152,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-13 18:00",
       "previsao_chegada": "2026-10-12 16:00",
-      "liberacao_dry": "2026-10-07 18:00"
+      "liberacao_dry": "2026-10-07 18:00",
+      "duracao_janela": "6d 0h"
     },
     {
       "navio": "MERCOSUL ITAJAI",
@@ -144,7 +161,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-14 12:00",
       "previsao_chegada": "2026-10-15 13:00",
-      "liberacao_dry": "2026-10-11 12:00"
+      "liberacao_dry": "2026-10-11 12:00",
+      "duracao_janela": "3d 0h"
     },
     {
       "navio": "XIN WEI HAI",
@@ -152,7 +170,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-15 12:00",
       "previsao_chegada": "2026-10-15 23:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM ATLANTIC",
@@ -160,7 +179,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-15 12:00",
       "previsao_chegada": "2026-10-17 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SANTA INES",
@@ -168,7 +188,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-15 18:00",
       "previsao_chegada": "2026-10-16 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC GIULIA",
@@ -176,7 +197,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-13 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING ARGENTINA",
@@ -184,7 +206,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-17 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM IRON",
@@ -192,7 +215,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-17 10:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC PERLE",
@@ -200,7 +224,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-20 13:46",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FIT",
@@ -208,7 +233,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-16 12:00",
       "previsao_chegada": "2026-10-20 22:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "HYUNDAI TOKYO",
@@ -216,7 +242,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-16 18:00",
       "previsao_chegada": "2026-10-27 09:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN EVOLUTION",
@@ -224,7 +251,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-17 12:00",
       "previsao_chegada": "2026-10-18 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN EXPERIENCE",
@@ -232,7 +260,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-19 09:00",
       "previsao_chegada": "2026-10-19 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN RESILIENTE",
@@ -240,7 +269,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-19 12:00",
       "previsao_chegada": "2026-10-20 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAR",
@@ -248,7 +278,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-19 12:00",
       "previsao_chegada": "2026-10-21 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COPIAPO",
@@ -256,7 +287,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-19 18:00",
       "previsao_chegada": "2026-10-20 23:59",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL GUARUJA",
@@ -264,7 +296,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-20 12:00",
       "previsao_chegada": "2026-10-21 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "APL NEW JERSEY",
@@ -272,7 +305,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-20 12:00",
       "previsao_chegada": "2026-10-22 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "GRANDE TEMA",
@@ -280,7 +314,8 @@
       "dia": "",
       "deadline": "2026-10-20 15:00",
       "previsao_chegada": "2026-10-21 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NAVIOS AMARILLO",
@@ -288,7 +323,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-21 12:00",
       "previsao_chegada": "2026-10-22 05:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SANTOS",
@@ -296,7 +332,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-21 12:00",
       "previsao_chegada": "2026-10-22 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING BRAZIL",
@@ -304,7 +341,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-21 18:00",
       "previsao_chegada": "2026-10-22 10:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NYK DIANA",
@@ -312,7 +350,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-22 12:00",
       "previsao_chegada": "2026-10-23 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LOTA",
@@ -320,7 +359,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-22 18:00",
       "previsao_chegada": "2026-10-23 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC QUITTERIE",
@@ -328,7 +368,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-23 12:00",
       "previsao_chegada": "2026-10-26 09:45",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM IRON",
@@ -336,7 +377,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-10-25 15:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "ONE GEORGE WASHINGTON",
@@ -344,7 +386,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-10-28 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "HMM BANGKOK",
@@ -352,7 +395,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-23 18:00",
       "previsao_chegada": "2026-11-03 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN JACARANDA",
@@ -360,7 +404,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-24 12:00",
       "previsao_chegada": "2026-10-25 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN JATOBA",
@@ -368,7 +413,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-26 09:00",
       "previsao_chegada": "2026-10-26 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CONTI CONQUEST",
@@ -376,7 +422,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-26 12:00",
       "previsao_chegada": "2026-10-27 01:10",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SUAPE",
@@ -384,7 +431,8 @@
       "dia": "TERÇA",
       "deadline": "2026-10-26 12:00",
       "previsao_chegada": "2026-10-27 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "KOTA PAHLAWAN",
@@ -392,7 +440,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-26 18:00",
       "previsao_chegada": "2026-10-26 02:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC CATERINA",
@@ -400,7 +449,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-26 18:00",
       "previsao_chegada": "2026-10-27 23:59",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM SANTOS",
@@ -408,7 +458,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-27 12:00",
       "previsao_chegada": "2026-10-28 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CARDIFF",
@@ -416,7 +467,8 @@
       "dia": "QUARTA",
       "deadline": "2026-10-27 12:00",
       "previsao_chegada": "2026-10-29 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MELINA",
@@ -424,7 +476,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM KRYPTON",
@@ -432,7 +485,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 09:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL ITAJAI",
@@ -440,7 +494,8 @@
       "dia": "QUINTA",
       "deadline": "2026-10-28 12:00",
       "previsao_chegada": "2026-10-29 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM MISSISSIPPI",
@@ -448,7 +503,8 @@
       "dia": "SEXTA",
       "deadline": "2026-10-29 18:00",
       "previsao_chegada": "2026-10-30 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING BRAZIL",
@@ -456,7 +512,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-10-30 12:00",
       "previsao_chegada": "2026-10-31 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC ILARIA",
@@ -464,7 +521,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-10-30 12:00",
       "previsao_chegada": "2026-11-02 07:48",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN POLARIS",
@@ -472,7 +530,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-10-31 12:00",
       "previsao_chegada": "2026-11-01 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN RESILIENTE",
@@ -480,7 +539,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-11-02 09:00",
       "previsao_chegada": "2026-11-02 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NAVIOS AMARILLO",
@@ -488,7 +548,8 @@
       "dia": "TERÇA",
       "deadline": "2026-11-02 10:00",
       "previsao_chegada": "2026-11-03 05:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN EXPERIENCE",
@@ -496,7 +557,8 @@
       "dia": "TERÇA",
       "deadline": "2026-11-02 12:00",
       "previsao_chegada": "2026-11-03 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAME",
@@ -504,7 +566,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-02 12:00",
       "previsao_chegada": "2026-11-16 07:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC MICHELA",
@@ -512,7 +575,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-02 18:00",
       "previsao_chegada": "2026-11-05 17:02",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM VERACRUZ",
@@ -520,7 +584,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-03 12:00",
       "previsao_chegada": "2026-11-04 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SWANSEA",
@@ -528,7 +593,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-03 12:00",
       "previsao_chegada": "2026-11-05 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SANTOS",
@@ -536,7 +602,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-04 12:00",
       "previsao_chegada": "2026-11-05 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM HONG KONG",
@@ -544,7 +611,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-11-05 12:00",
       "previsao_chegada": "2026-11-07 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LAMANAI",
@@ -552,7 +620,8 @@
       "dia": "SEXTA",
       "deadline": "2026-11-05 18:00",
       "previsao_chegada": "2026-11-06 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM KRYPTON",
@@ -560,7 +629,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-11-06 12:00",
       "previsao_chegada": "2026-11-07 04:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM THORIUM",
@@ -568,7 +638,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-06 12:00",
       "previsao_chegada": "2026-11-09 11:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "YM MOBILITY",
@@ -576,7 +647,8 @@
       "dia": "DOMINGO",
       "deadline": "2026-11-06 18:00",
       "previsao_chegada": "2026-11-08 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NAVIOS DOMINO",
@@ -584,7 +656,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-11-06 18:00",
       "previsao_chegada": "2026-11-08 21:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FIT",
@@ -592,7 +665,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-09 02:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN JATOBA",
@@ -600,7 +674,8 @@
       "dia": "TERÇA",
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-10 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAIR",
@@ -608,7 +683,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-09 12:00",
       "previsao_chegada": "2026-11-20 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC AJACCIO",
@@ -616,7 +692,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-09 18:00",
       "previsao_chegada": "2026-11-12 14:27",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL FORTALEZA",
@@ -624,7 +701,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-10 12:00",
       "previsao_chegada": "2026-11-11 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM XIAMEN",
@@ -632,7 +710,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-10 12:00",
       "previsao_chegada": "2026-11-12 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL ITAJAI",
@@ -640,7 +719,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-11 12:00",
       "previsao_chegada": "2026-11-12 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LEON",
@@ -648,7 +728,8 @@
       "dia": "SEXTA",
       "deadline": "2026-11-12 18:00",
       "previsao_chegada": "2026-11-13 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC EMMA",
@@ -656,7 +737,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-11-13 12:00",
       "previsao_chegada": "2026-11-16 10:52",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN EXPERIENCE",
@@ -664,7 +746,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-11-16 09:00",
       "previsao_chegada": "2026-11-16 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LONCOMILLA",
@@ -672,7 +755,8 @@
       "dia": "TERÇA",
       "deadline": "2026-11-16 10:00",
       "previsao_chegada": "2026-11-17 05:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN RESILIENTE",
@@ -680,7 +764,8 @@
       "dia": "TERÇA",
       "deadline": "2026-11-16 12:00",
       "previsao_chegada": "2026-11-17 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "KOTA ELOK",
@@ -688,7 +773,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-16 18:00",
       "previsao_chegada": "2026-11-17 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL GUARUJA",
@@ -696,7 +782,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-18 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM THORIUM",
@@ -704,7 +791,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-18 14:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM RABELAIS",
@@ -712,7 +800,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-17 12:00",
       "previsao_chegada": "2026-11-19 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SANTOS",
@@ -720,7 +809,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-18 12:00",
       "previsao_chegada": "2029-11-19 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING MEXICO",
@@ -728,7 +818,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-18 18:00",
       "previsao_chegada": "2026-11-19 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NAVIOS DOMINO",
@@ -736,7 +827,8 @@
       "dia": "SEXTA",
       "deadline": "2026-11-19 12:00",
       "previsao_chegada": "2026-11-20 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAITH",
@@ -744,7 +836,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-20 12:00",
       "previsao_chegada": "2026-11-21 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM SANTOS",
@@ -752,7 +845,8 @@
       "dia": "QUARTA",
       "deadline": "2026-11-24 12:00",
       "previsao_chegada": "2026-11-25 05:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL ITAJAI",
@@ -760,7 +854,8 @@
       "dia": "QUINTA",
       "deadline": "2026-11-25 12:00",
       "previsao_chegada": "2026-11-26 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM GEORGE SAND",
@@ -768,7 +863,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-11-26 12:00",
       "previsao_chegada": "2026-11-28 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SANTA INES",
@@ -776,7 +872,8 @@
       "dia": "SEXTA",
       "deadline": "2026-11-26 18:00",
       "previsao_chegada": "2026-11-27 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC NATASHA XII",
@@ -784,7 +881,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-11-27 12:00",
       "previsao_chegada": "2026-11-30 07:49",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING MEXICO",
@@ -792,7 +890,8 @@
       "dia": "SÁBADO",
       "deadline": "2026-11-27 18:00",
       "previsao_chegada": "2026-11-28 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM PUCCINI",
@@ -800,7 +899,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-01 12:00",
       "previsao_chegada": "2026-12-03 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LOTA",
@@ -808,7 +908,8 @@
       "dia": "SEXTA",
       "deadline": "2026-12-03 18:00",
       "previsao_chegada": "2026-12-04 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NYK DIANA",
@@ -816,7 +917,8 @@
       "dia": "SEGUNDA",
       "deadline": "2026-12-04 18:00",
       "previsao_chegada": "2026-12-06 21:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FINE",
@@ -824,7 +926,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-07 12:00",
       "previsao_chegada": "2026-12-09 04:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM LISA MARIE",
@@ -832,7 +935,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-14 12:00",
       "previsao_chegada": "2026-12-16 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NYK DIANA",
@@ -840,7 +944,8 @@
       "dia": "SEXTA",
       "deadline": "2026-12-17 12:00",
       "previsao_chegada": "2026-12-18 13:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LAMANAI",
@@ -848,7 +953,8 @@
       "dia": "SEXTA",
       "deadline": "2026-12-17 18:00",
       "previsao_chegada": "2026-12-18 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING DANUBE",
@@ -856,7 +962,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-21 12:00",
       "previsao_chegada": "2026-12-23 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "KOTA EMBUN",
@@ -864,7 +971,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-21 12:00",
       "previsao_chegada": "2026-12-23 11:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LEON",
@@ -872,7 +980,8 @@
       "dia": "SEXTA",
       "deadline": "2026-12-23 12:00",
       "previsao_chegada": "2026-12-25 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING RHINE",
@@ -880,7 +989,8 @@
       "dia": "QUARTA",
       "deadline": "2026-12-28 12:00",
       "previsao_chegada": "2026-12-30 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -888,7 +998,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-10-21 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "APL FLORIDA",
@@ -896,7 +1007,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-10-24 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -904,7 +1016,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-10-28 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC LETICIA",
@@ -912,7 +1025,8 @@
       "dia": "TERÇA",
       "deadline": "",
       "previsao_chegada": "2026-10-29 19:03",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "PRESTIGE",
@@ -920,7 +1034,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-10-31 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAME",
@@ -928,7 +1043,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-10-31 22:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAITH",
@@ -936,7 +1052,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-11-02 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FAIR",
@@ -944,7 +1061,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-11-03 00:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM COBALT",
@@ -952,7 +1070,8 @@
       "dia": "QUINTA",
       "deadline": "",
       "previsao_chegada": "2026-11-04 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -960,7 +1079,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-11-04 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "KOTA ELOK",
@@ -968,7 +1088,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-11-07 02:01",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "HMM JAKARTA",
@@ -976,7 +1097,8 @@
       "dia": "DOMINGO",
       "deadline": "",
       "previsao_chegada": "2026-11-08 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC NAPOLI",
@@ -984,7 +1106,8 @@
       "dia": "SEGUNDA",
       "deadline": "",
       "previsao_chegada": "2026-11-09 07:48",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SUAPE",
@@ -992,7 +1115,8 @@
       "dia": "SEGUNDA",
       "deadline": "",
       "previsao_chegada": "2026-11-09 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM COBALT",
@@ -1000,7 +1124,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-11-10 23:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -1008,7 +1133,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-11-11 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "YM MODERATION",
@@ -1016,7 +1142,8 @@
       "dia": "DOMINGO",
       "deadline": "",
       "previsao_chegada": "2026-11-15 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC MELINE",
@@ -1024,7 +1151,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-11-17 23:59",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN PANTANAL",
@@ -1032,7 +1160,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-11-18 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "EVER FINE",
@@ -1040,7 +1169,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-11-20 11:30",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MERCOSUL SUAPE",
@@ -1048,7 +1178,8 @@
       "dia": "TERÇA",
       "deadline": "",
       "previsao_chegada": "2026-11-24 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM SILVER",
@@ -1056,7 +1187,8 @@
       "dia": "QUINTA",
       "deadline": "",
       "previsao_chegada": "2026-11-27 12:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM LISA MARIE",
@@ -1064,7 +1196,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-11-27 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "LOG-IN EXPERIENCE",
@@ -1072,7 +1205,8 @@
       "dia": "TERÇA",
       "deadline": "",
       "previsao_chegada": "2026-12-01 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "ALESSIA",
@@ -1080,7 +1214,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-12-02 17:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MSC DANIT",
@@ -1088,7 +1223,8 @@
       "dia": "SEGUNDA",
       "deadline": "",
       "previsao_chegada": "2026-12-02 18:37",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "KOTA EMBUN",
@@ -1096,7 +1232,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-12-04 02:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MARIA H",
@@ -1104,7 +1241,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-05 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM SILVER",
@@ -1112,7 +1250,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-05 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING DANUBE",
@@ -1120,7 +1259,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-12-05 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "GREENHOUSE",
@@ -1128,7 +1268,8 @@
       "dia": "DOMINGO",
       "deadline": "",
       "previsao_chegada": "2026-12-06 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "X-PRESS PISCES",
@@ -1136,7 +1277,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-12 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "COSCO SHIPPING RHINE",
@@ -1144,7 +1286,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2026-12-12 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "YM MOVEMENT",
@@ -1152,7 +1295,8 @@
       "dia": "DOMINGO",
       "deadline": "",
       "previsao_chegada": "2026-12-13 01:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM FRANCOISE SAGAN",
@@ -1160,7 +1304,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-12-17 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM OSMIUM",
@@ -1168,7 +1313,8 @@
       "dia": "QUINTA",
       "deadline": "",
       "previsao_chegada": "2026-12-17 10:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM SYRACUSE",
@@ -1176,7 +1322,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-19 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "APL NEW JERSEY",
@@ -1184,7 +1331,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-12-24 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "NORWALK",
@@ -1192,7 +1340,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-26 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM OSMIUM",
@@ -1200,7 +1349,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2026-12-26 18:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CARDIFF",
@@ -1208,7 +1358,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2026-12-31 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM ATLANTIC",
@@ -1216,7 +1367,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2027-01-02 06:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SWANSEA",
@@ -1224,7 +1376,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2027-01-07 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "SANTA INES",
@@ -1232,7 +1385,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2027-01-08 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM XIAMEN",
@@ -1240,7 +1394,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2027-01-14 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LOTA",
@@ -1248,7 +1403,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2027-01-15 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "PRESTIGE",
@@ -1256,7 +1412,8 @@
       "dia": "SÁBADO",
       "deadline": "",
       "previsao_chegada": "2027-01-16 07:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LAMANAI",
@@ -1264,7 +1421,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2027-01-29 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "MAERSK LEON",
@@ -1272,7 +1430,8 @@
       "dia": "SEXTA",
       "deadline": "",
       "previsao_chegada": "2027-02-05 19:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     },
     {
       "navio": "CMA CGM RABELAIS",
@@ -1280,7 +1439,8 @@
       "dia": "QUARTA",
       "deadline": "",
       "previsao_chegada": "2028-09-10 00:00",
-      "liberacao_dry": ""
+      "liberacao_dry": "",
+      "duracao_janela": ""
     }
   ]
 }
