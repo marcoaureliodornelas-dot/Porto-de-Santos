@@ -1,0 +1,1286 @@
+{
+  "atualizado_em": "2026-10-10 14:01",
+  "fonte": "Relação de navios - Porto de Santos.pdf",
+  "navios": [
+    {
+      "navio": "KOTA PAHLAWAN",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "2026-10-08 12:00",
+      "previsao_chegada": "2026-10-09 14:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER LEADER",
+      "berth": "CSW",
+      "dia": "QUARTA",
+      "deadline": "2026-10-09 12:00",
+      "previsao_chegada": "2026-10-04 00:00",
+      "liberacao_dry": "2026-10-01 07:00"
+    },
+    {
+      "navio": "COSCO SHIPPING CHILE",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-09 12:00",
+      "previsao_chegada": "2026-10-10 19:00",
+      "liberacao_dry": "2026-10-07 12:00"
+    },
+    {
+      "navio": "MSC GRACE",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-09 12:00",
+      "previsao_chegada": "2028-10-12 05:13",
+      "liberacao_dry": "2026-10-07 01:00"
+    },
+    {
+      "navio": "NYK RUMINA",
+      "berth": "LUX-NB",
+      "dia": "SEXTA",
+      "deadline": "2026-10-09 17:00",
+      "previsao_chegada": "2026-10-11 16:00",
+      "liberacao_dry": "2026-10-07 07:00"
+    },
+    {
+      "navio": "MSC STELLA MX",
+      "berth": "CARIOCA",
+      "dia": "TERÇA",
+      "deadline": "2026-10-09 18:00",
+      "previsao_chegada": "2026-10-14 23:00",
+      "liberacao_dry": "2026-10-09 06:00"
+    },
+    {
+      "navio": "LOG-IN ENDURANCE",
+      "berth": "SEA",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-11 18:00",
+      "liberacao_dry": "2026-10-06 19:00"
+    },
+    {
+      "navio": "MSC BUSAN VIII",
+      "berth": "WMED",
+      "dia": "QUARTA",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-12 14:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SUAPE",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-12 19:00",
+      "liberacao_dry": "2026-10-08 12:00"
+    },
+    {
+      "navio": "MSC LETIZIA",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-12 23:02",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SPYROS V",
+      "berth": "ZGT-NB",
+      "dia": "TERÇA",
+      "deadline": "2026-10-10 12:00",
+      "previsao_chegada": "2026-10-13 05:30",
+      "liberacao_dry": "2026-10-07 16:00"
+    },
+    {
+      "navio": "LOG-IN JATOBA",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-10-13 09:00",
+      "previsao_chegada": "2026-10-13 18:00",
+      "liberacao_dry": "2026-10-08 19:00"
+    },
+    {
+      "navio": "KOTA ELAN",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-13 12:00",
+      "previsao_chegada": "2026-10-12 20:00",
+      "liberacao_dry": "2026-10-10 07:00"
+    },
+    {
+      "navio": "MERCOSUL FORTALEZA",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-13 12:00",
+      "previsao_chegada": "2026-10-14 05:01",
+      "liberacao_dry": "2026-10-08 19:00"
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "2026-10-13 12:00",
+      "previsao_chegada": "2026-10-14 12:00",
+      "liberacao_dry": "2026-10-10 12:00"
+    },
+    {
+      "navio": "CMA CGM FRANCOISE SAGAN",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-13 12:00",
+      "previsao_chegada": "2026-10-16 12:00",
+      "liberacao_dry": "2026-10-11 12:00"
+    },
+    {
+      "navio": "NORWALK",
+      "berth": "SEAS3-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-13 18:00",
+      "previsao_chegada": "2026-10-12 16:00",
+      "liberacao_dry": "2026-10-07 18:00"
+    },
+    {
+      "navio": "MERCOSUL ITAJAI",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-10-14 12:00",
+      "previsao_chegada": "2026-10-15 13:00",
+      "liberacao_dry": "2026-10-11 12:00"
+    },
+    {
+      "navio": "XIN WEI HAI",
+      "berth": "LUX-NB",
+      "dia": "SEXTA",
+      "deadline": "2026-10-15 12:00",
+      "previsao_chegada": "2026-10-15 23:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM ATLANTIC",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-15 12:00",
+      "previsao_chegada": "2026-10-17 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SANTA INES",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-10-15 18:00",
+      "previsao_chegada": "2026-10-16 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC GIULIA",
+      "berth": "CARIOCA",
+      "dia": "TERÇA",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-13 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING ARGENTINA",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-17 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM IRON",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-17 10:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC PERLE",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-20 13:46",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FIT",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "2026-10-16 12:00",
+      "previsao_chegada": "2026-10-20 22:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "HYUNDAI TOKYO",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-16 18:00",
+      "previsao_chegada": "2026-10-27 09:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN EVOLUTION",
+      "berth": "SEA",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-17 12:00",
+      "previsao_chegada": "2026-10-18 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN EXPERIENCE",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-19 09:00",
+      "previsao_chegada": "2026-10-19 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN RESILIENTE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-10-19 12:00",
+      "previsao_chegada": "2026-10-20 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAR",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-19 12:00",
+      "previsao_chegada": "2026-10-21 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COPIAPO",
+      "berth": "WMED-SB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-19 18:00",
+      "previsao_chegada": "2026-10-20 23:59",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL GUARUJA",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-20 12:00",
+      "previsao_chegada": "2026-10-21 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "APL NEW JERSEY",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-20 12:00",
+      "previsao_chegada": "2026-10-22 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "GRANDE TEMA",
+      "berth": "",
+      "dia": "",
+      "deadline": "2026-10-20 15:00",
+      "previsao_chegada": "2026-10-21 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NAVIOS AMARILLO",
+      "berth": "ZGT-SB",
+      "dia": "QUINTA",
+      "deadline": "2026-10-21 12:00",
+      "previsao_chegada": "2026-10-22 05:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SANTOS",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-10-21 12:00",
+      "previsao_chegada": "2026-10-22 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING BRAZIL",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "2026-10-21 18:00",
+      "previsao_chegada": "2026-10-22 10:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NYK DIANA",
+      "berth": "LUX-NB",
+      "dia": "SEXTA",
+      "deadline": "2026-10-22 12:00",
+      "previsao_chegada": "2026-10-23 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LOTA",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-10-22 18:00",
+      "previsao_chegada": "2026-10-23 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC QUITTERIE",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-23 12:00",
+      "previsao_chegada": "2026-10-26 09:45",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM IRON",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-23 18:00",
+      "previsao_chegada": "2026-10-25 15:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "ONE GEORGE WASHINGTON",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-23 18:00",
+      "previsao_chegada": "2026-10-28 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "HMM BANGKOK",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-23 18:00",
+      "previsao_chegada": "2026-11-03 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN JACARANDA",
+      "berth": "SEA",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-24 12:00",
+      "previsao_chegada": "2026-10-25 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN JATOBA",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-26 09:00",
+      "previsao_chegada": "2026-10-26 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CONTI CONQUEST",
+      "berth": "CARIOCA",
+      "dia": "TERÇA",
+      "deadline": "2026-10-26 12:00",
+      "previsao_chegada": "2026-10-27 01:10",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SUAPE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-10-26 12:00",
+      "previsao_chegada": "2026-10-27 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "KOTA PAHLAWAN",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-26 18:00",
+      "previsao_chegada": "2026-10-26 02:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC CATERINA",
+      "berth": "WMED-SB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-26 18:00",
+      "previsao_chegada": "2026-10-27 23:59",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM SANTOS",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-10-27 12:00",
+      "previsao_chegada": "2026-10-28 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CARDIFF",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-10-27 12:00",
+      "previsao_chegada": "2026-10-29 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MELINA",
+      "berth": "ZGT-SB",
+      "dia": "QUINTA",
+      "deadline": "2026-10-28 12:00",
+      "previsao_chegada": "2026-10-29 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM KRYPTON",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "2026-10-28 12:00",
+      "previsao_chegada": "2026-10-29 09:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL ITAJAI",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-10-28 12:00",
+      "previsao_chegada": "2026-10-29 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM MISSISSIPPI",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-10-29 18:00",
+      "previsao_chegada": "2026-10-30 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING BRAZIL",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-10-30 12:00",
+      "previsao_chegada": "2026-10-31 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC ILARIA",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-10-30 12:00",
+      "previsao_chegada": "2026-11-02 07:48",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN POLARIS",
+      "berth": "SEA",
+      "dia": "DOMINGO",
+      "deadline": "2026-10-31 12:00",
+      "previsao_chegada": "2026-11-01 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN RESILIENTE",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-02 09:00",
+      "previsao_chegada": "2026-11-02 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NAVIOS AMARILLO",
+      "berth": "ZGT-NB",
+      "dia": "TERÇA",
+      "deadline": "2026-11-02 10:00",
+      "previsao_chegada": "2026-11-03 05:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN EXPERIENCE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-11-02 12:00",
+      "previsao_chegada": "2026-11-03 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAME",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-02 12:00",
+      "previsao_chegada": "2026-11-16 07:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC MICHELA",
+      "berth": "WMED-SB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-02 18:00",
+      "previsao_chegada": "2026-11-05 17:02",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM VERACRUZ",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-03 12:00",
+      "previsao_chegada": "2026-11-04 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SWANSEA",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-03 12:00",
+      "previsao_chegada": "2026-11-05 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SANTOS",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-11-04 12:00",
+      "previsao_chegada": "2026-11-05 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM HONG KONG",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-05 12:00",
+      "previsao_chegada": "2026-11-07 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LAMANAI",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-11-05 18:00",
+      "previsao_chegada": "2026-11-06 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM KRYPTON",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-06 12:00",
+      "previsao_chegada": "2026-11-07 04:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM THORIUM",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "2026-11-06 12:00",
+      "previsao_chegada": "2026-11-09 11:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "YM MOBILITY",
+      "berth": "FL2-NB",
+      "dia": "DOMINGO",
+      "deadline": "2026-11-06 18:00",
+      "previsao_chegada": "2026-11-08 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NAVIOS DOMINO",
+      "berth": "LUX-SB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-06 18:00",
+      "previsao_chegada": "2026-11-08 21:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FIT",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-09 12:00",
+      "previsao_chegada": "2026-11-09 02:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN JATOBA",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-11-09 12:00",
+      "previsao_chegada": "2026-11-10 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAIR",
+      "berth": "SEAS-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-09 12:00",
+      "previsao_chegada": "2026-11-20 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC AJACCIO",
+      "berth": "WMED-SB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-09 18:00",
+      "previsao_chegada": "2026-11-12 14:27",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL FORTALEZA",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-10 12:00",
+      "previsao_chegada": "2026-11-11 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM XIAMEN",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-10 12:00",
+      "previsao_chegada": "2026-11-12 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL ITAJAI",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-11-11 12:00",
+      "previsao_chegada": "2026-11-12 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LEON",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-11-12 18:00",
+      "previsao_chegada": "2026-11-13 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC EMMA",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-13 12:00",
+      "previsao_chegada": "2026-11-16 10:52",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN EXPERIENCE",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-16 09:00",
+      "previsao_chegada": "2026-11-16 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LONCOMILLA",
+      "berth": "ZGT-NB",
+      "dia": "TERÇA",
+      "deadline": "2026-11-16 10:00",
+      "previsao_chegada": "2026-11-17 05:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN RESILIENTE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "2026-11-16 12:00",
+      "previsao_chegada": "2026-11-17 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "KOTA ELOK",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-16 18:00",
+      "previsao_chegada": "2026-11-17 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL GUARUJA",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-17 12:00",
+      "previsao_chegada": "2026-11-18 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM THORIUM",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-17 12:00",
+      "previsao_chegada": "2026-11-18 14:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM RABELAIS",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-17 12:00",
+      "previsao_chegada": "2026-11-19 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SANTOS",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-11-18 12:00",
+      "previsao_chegada": "2029-11-19 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING MEXICO",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "2026-11-18 18:00",
+      "previsao_chegada": "2026-11-19 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NAVIOS DOMINO",
+      "berth": "LUX-NB",
+      "dia": "SEXTA",
+      "deadline": "2026-11-19 12:00",
+      "previsao_chegada": "2026-11-20 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAITH",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-11-20 12:00",
+      "previsao_chegada": "2026-11-21 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM SANTOS",
+      "berth": "BRACO",
+      "dia": "QUARTA",
+      "deadline": "2026-11-24 12:00",
+      "previsao_chegada": "2026-11-25 05:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL ITAJAI",
+      "berth": "PUMA",
+      "dia": "QUINTA",
+      "deadline": "2026-11-25 12:00",
+      "previsao_chegada": "2026-11-26 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM GEORGE SAND",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-26 12:00",
+      "previsao_chegada": "2026-11-28 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SANTA INES",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-11-26 18:00",
+      "previsao_chegada": "2026-11-27 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC NATASHA XII",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "2026-11-27 12:00",
+      "previsao_chegada": "2026-11-30 07:49",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING MEXICO",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "2026-11-27 18:00",
+      "previsao_chegada": "2026-11-28 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM PUCCINI",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-01 12:00",
+      "previsao_chegada": "2026-12-03 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LOTA",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-12-03 18:00",
+      "previsao_chegada": "2026-12-04 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NYK DIANA",
+      "berth": "LUX-SB",
+      "dia": "SEGUNDA",
+      "deadline": "2026-12-04 18:00",
+      "previsao_chegada": "2026-12-06 21:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FINE",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-07 12:00",
+      "previsao_chegada": "2026-12-09 04:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM LISA MARIE",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-14 12:00",
+      "previsao_chegada": "2026-12-16 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NYK DIANA",
+      "berth": "LUX-NB",
+      "dia": "SEXTA",
+      "deadline": "2026-12-17 12:00",
+      "previsao_chegada": "2026-12-18 13:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LAMANAI",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-12-17 18:00",
+      "previsao_chegada": "2026-12-18 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING DANUBE",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-21 12:00",
+      "previsao_chegada": "2026-12-23 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "KOTA EMBUN",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-21 12:00",
+      "previsao_chegada": "2026-12-23 11:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LEON",
+      "berth": "SIRIUS",
+      "dia": "SEXTA",
+      "deadline": "2026-12-23 12:00",
+      "previsao_chegada": "2026-12-25 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING RHINE",
+      "berth": "SEAS1-EB",
+      "dia": "QUARTA",
+      "deadline": "2026-12-28 12:00",
+      "previsao_chegada": "2026-12-30 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-10-21 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "APL FLORIDA",
+      "berth": "SEAS3-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-10-24 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-10-28 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC LETICIA",
+      "berth": "CARIOCA",
+      "dia": "TERÇA",
+      "deadline": "",
+      "previsao_chegada": "2026-10-29 19:03",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "PRESTIGE",
+      "berth": "SEAS3-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-10-31 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAME",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-10-31 22:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAITH",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-02 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FAIR",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-03 00:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM COBALT",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-04 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-04 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "KOTA ELOK",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-07 02:01",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "HMM JAKARTA",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "",
+      "previsao_chegada": "2026-11-08 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC NAPOLI",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-09 07:48",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SUAPE",
+      "berth": "PLATA-NB",
+      "dia": "SEGUNDA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-09 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM COBALT",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-11-10 23:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-11 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "YM MODERATION",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "",
+      "previsao_chegada": "2026-11-15 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC MELINE",
+      "berth": "WMED-SB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-17 23:59",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN PANTANAL",
+      "berth": "SSR",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-18 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "EVER FINE",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-20 11:30",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MERCOSUL SUAPE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-24 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM SILVER",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-27 12:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM LISA MARIE",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-11-27 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "LOG-IN EXPERIENCE",
+      "berth": "PLATA-SB",
+      "dia": "TERÇA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-01 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "ALESSIA",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-02 17:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MSC DANIT",
+      "berth": "SANTANA",
+      "dia": "SEGUNDA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-02 18:37",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "KOTA EMBUN",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-04 02:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MARIA H",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-05 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM SILVER",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-05 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING DANUBE",
+      "berth": "SEAS1",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-05 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "GREENHOUSE",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-06 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "X-PRESS PISCES",
+      "berth": "SEAS3-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-12 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "COSCO SHIPPING RHINE",
+      "berth": "SEAS1-WB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-12 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "YM MOVEMENT",
+      "berth": "FL2",
+      "dia": "DOMINGO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-13 01:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM FRANCOISE SAGAN",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-17 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM OSMIUM",
+      "berth": "SEAS2-WB",
+      "dia": "QUINTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-17 10:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM SYRACUSE",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-19 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "APL NEW JERSEY",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-24 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "NORWALK",
+      "berth": "SEAS3",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-26 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM OSMIUM",
+      "berth": "SEAS2-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2026-12-26 18:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CARDIFF",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2026-12-31 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM ATLANTIC",
+      "berth": "SEAS3-WB/E",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2027-01-02 06:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SWANSEA",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2027-01-07 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "SANTA INES",
+      "berth": "SIRIUS-SB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2027-01-08 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM XIAMEN",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2027-01-14 00:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LOTA",
+      "berth": "SIRIUS-SB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2027-01-15 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "PRESTIGE",
+      "berth": "SEAS3-EB",
+      "dia": "SÁBADO",
+      "deadline": "",
+      "previsao_chegada": "2027-01-16 07:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LAMANAI",
+      "berth": "SIRIUS-SB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2027-01-29 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "MAERSK LEON",
+      "berth": "SIRIUS-SB",
+      "dia": "SEXTA",
+      "deadline": "",
+      "previsao_chegada": "2027-02-05 19:00",
+      "liberacao_dry": ""
+    },
+    {
+      "navio": "CMA CGM RABELAIS",
+      "berth": "BRAZEX-NB",
+      "dia": "QUARTA",
+      "deadline": "",
+      "previsao_chegada": "2028-09-10 00:00",
+      "liberacao_dry": ""
+    }
+  ]
+}
