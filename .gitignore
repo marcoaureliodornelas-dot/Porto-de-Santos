@@ -1,0 +1,29 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Ambientes e segredos
+.env
+.env.*
+!.env.example
+
+# Dependências e builds
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+
+# Logs
+*.log
+
+# Configurações locais do Claude Code
+.claude/settings.local.json
