@@ -25,11 +25,14 @@ tabela com OCR (RapidOCR, roda localmente). Leva cerca de 2 a 3 minutos.
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| `docs/index.html` | Painel: busca, ordenação por qualquer coluna, destaque de deadlines vencidos e das próximas 48 h |
+| `docs/index.html` | Painel: 4 indicadores (recebimento aberto agora, deadlines em 48 h, chegadas em 7 dias, janela média de recebimento), busca, ordenação por qualquer coluna e destaque de deadlines |
 | `data/navios.csv` | Tabela para Excel (separador `;`) |
 | `data/navios.json` | Mesmos dados, com a data da lista |
 
 Linhas de reserva do sistema (`TBN ...`, `NAVIO SEM NOME`) são descartadas.
+
+Depois de mudar o visual (`tools/painel.html`), refaça só o painel, sem OCR:
+`python tools/extrair_lista.py --so-painel`.
 
 ## Instalação
 

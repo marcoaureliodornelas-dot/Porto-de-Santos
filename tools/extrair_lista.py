@@ -12,6 +12,7 @@ desenhadas como vetores), então a tabela é lida assim:
 Uso:
     python tools/extrair_lista.py "C:/caminho/Relação de navios.pdf"
     python tools/extrair_lista.py            # usa o PDF mais recente em entrada/
+    python tools/extrair_lista.py --so-painel  # só refaz o painel
 """
 
 import csv
@@ -221,13 +222,30 @@ def salvar(navios, origem):
             "fonte": Path(origem).name, "navios": navios}
     (pasta / "navios.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+    gerar_painel(meta)
+
+
+def gerar_painel(meta, destino=None, documento_completo=True):
+    """Preenche o modelo com os dados. O modelo não tem <html>/<head> para
+    também servir como Artifact do claude.ai; para abrir no navegador ou no
+    GitHub, o arquivo ganha o esqueleto de documento."""
     modelo = (RAIZ / "tools" / "painel.html").read_text(encoding="utf-8")
     html = modelo.replace("/*DADOS*/null", json.dumps(meta, ensure_ascii=False))
-    (RAIZ / "docs").mkdir(exist_ok=True)
-    (RAIZ / "docs" / "index.html").write_text(html, encoding="utf-8")
+    if documento_completo:
+        html = ('<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n'
+                '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+                f'{html}\n</html>\n')
+    destino = Path(destino) if destino else RAIZ / "docs" / "index.html"
+    destino.parent.mkdir(exist_ok=True)
+    destino.write_text(html, encoding="utf-8")
 
 
 def main():
+    if sys.argv[1:] == ["--so-painel"]:
+        # Refaz só o painel com os dados já extraídos (após mudar o modelo).
+        gerar_painel(json.loads((RAIZ / "data" / "navios.json").read_text(encoding="utf-8")))
+        print("Painel regerado a partir de data/navios.json")
+        return
     if len(sys.argv) > 1:
         origem = Path(sys.argv[1])
     else:

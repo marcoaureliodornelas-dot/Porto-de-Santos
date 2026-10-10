@@ -4,69 +4,107 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Navios Tecon Santos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
+  /* Layout: painel de operação — faixa de 4 indicadores clicáveis, depois a tabela de navios. */
   :root {
-    --bg: #f6f7f9; --card: #ffffff; --text: #1b2430; --muted: #5d6b7c;
-    --line: #e1e5ea; --accent: #0b5cad; --head: #eef2f6;
-    --late-bg: #fdecec; --late: #b42318; --soon-bg: #fff6e0; --soon: #93600a;
-    --ok: #1a7f4b;
+    --bg: #f3f5f8; --surface: #ffffff; --ink: #14202e; --ink-2: #4a5a6d; --ink-3: #75849a;
+    --line: #dde3ea; --head: #e9eef4; --accent: #0a5c8a; --accent-soft: #e2eff7;
+    --warn: #9a5b00; --warn-bg: #fff3dc; --crit: #b42318; --crit-bg: #fdeceb; --good: #1d7a4c; --good-bg: #e4f4ea;
+    --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+    --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --f-data: "IBM Plex Mono", ui-monospace, Consolas, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f141a; --card: #171e26; --text: #e6ebf1; --muted: #9aa7b6;
-      --line: #2a3440; --accent: #6fb1ff; --head: #1e2731;
-      --late-bg: #3a1a1a; --late: #ff9b91; --soon-bg: #3a2e12; --soon: #f5c66b;
-      --ok: #6fd39d;
+      --bg: #0d141c; --surface: #152029; --ink: #e5ecf3; --ink-2: #a4b2c2; --ink-3: #7b8a9c;
+      --line: #263441; --head: #1b2833; --accent: #5cb3e6; --accent-soft: #15344a;
+      --warn: #f2b84b; --warn-bg: #3a2b0d; --crit: #ff958a; --crit-bg: #3d1716; --good: #6fd3a0; --good-bg: #123325;
+      color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0f141a; --card: #171e26; --text: #e6ebf1; --muted: #9aa7b6;
-    --line: #2a3440; --accent: #6fb1ff; --head: #1e2731;
-    --late-bg: #3a1a1a; --late: #ff9b91; --soon-bg: #3a2e12; --soon: #f5c66b;
-    --ok: #6fd39d;
+    --bg: #0d141c; --surface: #152029; --ink: #e5ecf3; --ink-2: #a4b2c2; --ink-3: #7b8a9c;
+    --line: #263441; --head: #1b2833; --accent: #5cb3e6; --accent-soft: #15344a;
+    --warn: #f2b84b; --warn-bg: #3a2b0d; --crit: #ff958a; --crit-bg: #3d1716; --good: #6fd3a0; --good-bg: #123325;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text);
-         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
-  h1 { font-size: 22px; margin: 0 0 4px; }
-  .sub { color: var(--muted); margin: 0 0 20px; }
-  .barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
-  input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line);
-         border-radius: 8px; background: var(--card); color: var(--text); font: inherit; }
-  button, label.chk { padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
-         background: var(--card); color: var(--text); font: inherit; cursor: pointer; }
-  label.chk { display: inline-flex; gap: 6px; align-items: center; }
-  .legenda { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 13px; margin-bottom: 10px; }
-  .legenda span::before { content: ""; display: inline-block; width: 10px; height: 10px;
-         border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
-  .lg-late::before { background: var(--late); } .lg-soon::before { background: var(--soon); }
-  .tabela { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; min-width: 760px; }
-  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
-  th { background: var(--head); font-weight: 600; cursor: pointer; user-select: none; position: sticky; top: 0; }
-  th .seta { color: var(--accent); margin-left: 4px; }
-  td.navio { font-weight: 600; white-space: normal; }
-  td.data, td.duracao_janela { font-variant-numeric: tabular-nums; }
-  tr.late td.deadline { background: var(--late-bg); color: var(--late); font-weight: 600; }
-  tr.soon td.deadline { background: var(--soon-bg); color: var(--soon); font-weight: 600; }
-  td.vazio { color: var(--muted); }
-  .rodape { color: var(--muted); font-size: 13px; margin-top: 12px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 var(--f-body); }
+  main { max-width: 1180px; margin: 0 auto; padding-block: 28px 56px; padding-inline: 16px;
+         display: flex; flex-direction: column; gap: 20px; }
+
+  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 8px 24px; }
+  .eyebrow { font: 500 12px/1 var(--f-data); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+  h1 { font: 700 clamp(24px, 4vw, 32px)/1.1 var(--f-display); margin: 0; text-wrap: balance; }
+  .fonte { color: var(--ink-2); font-size: 13px; margin: 0; }
+  .fonte b { font-family: var(--f-data); font-weight: 500; color: var(--ink); }
+  .aviso { color: var(--warn); }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 900px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 420px) { .kpis { grid-template-columns: 1fr; } }
+  .kpi { text-align: left; font: inherit; color: inherit; cursor: pointer; background: var(--surface);
+         border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 6px;
+         grid-template-rows: auto auto 1fr auto; transition: border-color .15s, box-shadow .15s; }
+  .kpi:hover { border-color: var(--accent); }
+  .kpi:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .kpi[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
+  .kpi-rot { font: 500 12px/1.3 var(--f-data); letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+  .kpi-val { font: 700 40px/1 var(--f-display); font-variant-numeric: tabular-nums; display: flex; align-items: baseline; gap: 6px; }
+  .kpi-val small { font: 500 14px var(--f-body); color: var(--ink-2); }
+  .kpi-det { font-size: 13px; color: var(--ink-2); }
+  .pill { justify-self: start; font: 500 11px/1 var(--f-data); letter-spacing: .04em; text-transform: uppercase;
+          padding: 5px 8px; border-radius: 999px; }
+  .pill.good { color: var(--good); background: var(--good-bg); }
+  .pill.warn { color: var(--warn); background: var(--warn-bg); }
+  .pill.crit { color: var(--crit); background: var(--crit-bg); }
+  .pill.neutral { color: var(--accent); background: var(--accent-soft); }
+
+  .barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .barra input[type=search] { flex: 1 1 240px; min-width: 0; padding: 9px 12px; border: 1px solid var(--line);
+         border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
+  .btn, .chk { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
+         color: var(--ink); font: inherit; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+  .btn:focus-visible, .barra input:focus-visible, .chk:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
+  #limpar[hidden] { display: none; }
+
+  .tabela { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; min-width: 0; }
+  table { width: 100%; border-collapse: collapse; min-width: 820px; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: 0; }
+  th { background: var(--head); font: 600 12px/1.3 var(--f-body); color: var(--ink-2); letter-spacing: .02em; }
+  th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+  th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  th .seta { color: var(--accent); }
+  td.navio { font-weight: 600; white-space: normal; min-width: 180px; }
+  td.data, td.duracao_janela { font: 400 13px var(--f-data); font-variant-numeric: tabular-nums; }
+  td.berth, td.dia { font-size: 13px; color: var(--ink-2); }
+  td .tag { margin-left: 8px; }
+  tr.late td.deadline { color: var(--crit); font-weight: 500; }
+  tr.soon td.deadline { color: var(--warn); font-weight: 500; }
+  td.vazio { color: var(--ink-3); }
+  .rodape { color: var(--ink-3); font-size: 13px; margin: 0; }
 </style>
-</head>
-<body>
+
 <main>
-  <h1>Recebimento de exportação · Tecon Santos</h1>
-  <p class="sub" id="sub"></p>
+  <header>
+    <div>
+      <p class="eyebrow">Tecon Santos · recebimento de exportação</p>
+      <h1>Navios e deadlines</h1>
+    </div>
+    <p class="fonte" id="fonte"></p>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Indicadores"></section>
 
   <div class="barra">
-    <input type="search" id="busca" placeholder="Buscar navio, berth ou dia">
-    <button id="ordem"></button>
+    <input type="search" id="busca" placeholder="Buscar navio, berth ou dia" aria-label="Buscar">
+    <button class="btn" id="ordem" type="button"></button>
     <label class="chk"><input type="checkbox" id="vencidos"> Mostrar deadlines vencidos</label>
-  </div>
-  <div class="legenda">
-    <span class="lg-late">Deadline vencido</span>
-    <span class="lg-soon">Deadline nas próximas 48 h</span>
+    <button class="btn" id="limpar" type="button" hidden>Limpar filtro</button>
   </div>
 
   <div class="tabela"><table>
@@ -75,6 +113,7 @@
   </table></div>
   <p class="rodape" id="rodape"></p>
 </main>
+
 <script>
 const DADOS = {"atualizado_em": "2026-10-10 14:01", "fonte": "Relação de navios - Porto de Santos.pdf", "navios": [{"navio": "KOTA PAHLAWAN", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "2026-10-08 12:00", "previsao_chegada": "2026-10-09 14:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER LEADER", "berth": "CSW", "dia": "QUARTA", "deadline": "2026-10-09 12:00", "previsao_chegada": "2026-10-04 00:00", "liberacao_dry": "2026-10-01 07:00", "duracao_janela": "8d 5h"}, {"navio": "COSCO SHIPPING CHILE", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-10-09 12:00", "previsao_chegada": "2026-10-10 19:00", "liberacao_dry": "2026-10-07 12:00", "duracao_janela": "2d 0h"}, {"navio": "MSC GRACE", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-10-09 12:00", "previsao_chegada": "2028-10-12 05:13", "liberacao_dry": "2026-10-07 01:00", "duracao_janela": "2d 11h"}, {"navio": "NYK RUMINA", "berth": "LUX-NB", "dia": "SEXTA", "deadline": "2026-10-09 17:00", "previsao_chegada": "2026-10-11 16:00", "liberacao_dry": "2026-10-07 07:00", "duracao_janela": "2d 10h"}, {"navio": "MSC STELLA MX", "berth": "CARIOCA", "dia": "TERÇA", "deadline": "2026-10-09 18:00", "previsao_chegada": "2026-10-14 23:00", "liberacao_dry": "2026-10-09 06:00", "duracao_janela": "12h"}, {"navio": "LOG-IN ENDURANCE", "berth": "SEA", "dia": "DOMINGO", "deadline": "2026-10-10 12:00", "previsao_chegada": "2026-10-11 18:00", "liberacao_dry": "2026-10-06 19:00", "duracao_janela": "3d 17h"}, {"navio": "MSC BUSAN VIII", "berth": "WMED", "dia": "QUARTA", "deadline": "2026-10-10 12:00", "previsao_chegada": "2026-10-12 14:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SUAPE", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "2026-10-10 12:00", "previsao_chegada": "2026-10-12 19:00", "liberacao_dry": "2026-10-08 12:00", "duracao_janela": "2d 0h"}, {"navio": "MSC LETIZIA", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-10-10 12:00", "previsao_chegada": "2026-10-12 23:02", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SPYROS V", "berth": "ZGT-NB", "dia": "TERÇA", "deadline": "2026-10-10 12:00", "previsao_chegada": "2026-10-13 05:30", "liberacao_dry": "2026-10-07 16:00", "duracao_janela": "2d 20h"}, {"navio": "LOG-IN JATOBA", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-10-13 09:00", "previsao_chegada": "2026-10-13 18:00", "liberacao_dry": "2026-10-08 19:00", "duracao_janela": "4d 14h"}, {"navio": "KOTA ELAN", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-10-13 12:00", "previsao_chegada": "2026-10-12 20:00", "liberacao_dry": "2026-10-10 07:00", "duracao_janela": "3d 5h"}, {"navio": "MERCOSUL FORTALEZA", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-10-13 12:00", "previsao_chegada": "2026-10-14 05:01", "liberacao_dry": "2026-10-08 19:00", "duracao_janela": "4d 17h"}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "2026-10-13 12:00", "previsao_chegada": "2026-10-14 12:00", "liberacao_dry": "2026-10-10 12:00", "duracao_janela": "3d 0h"}, {"navio": "CMA CGM FRANCOISE SAGAN", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-10-13 12:00", "previsao_chegada": "2026-10-16 12:00", "liberacao_dry": "2026-10-11 12:00", "duracao_janela": "2d 0h"}, {"navio": "NORWALK", "berth": "SEAS3-EB", "dia": "SÁBADO", "deadline": "2026-10-13 18:00", "previsao_chegada": "2026-10-12 16:00", "liberacao_dry": "2026-10-07 18:00", "duracao_janela": "6d 0h"}, {"navio": "MERCOSUL ITAJAI", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-10-14 12:00", "previsao_chegada": "2026-10-15 13:00", "liberacao_dry": "2026-10-11 12:00", "duracao_janela": "3d 0h"}, {"navio": "XIN WEI HAI", "berth": "LUX-NB", "dia": "SEXTA", "deadline": "2026-10-15 12:00", "previsao_chegada": "2026-10-15 23:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM ATLANTIC", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "2026-10-15 12:00", "previsao_chegada": "2026-10-17 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SANTA INES", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-10-15 18:00", "previsao_chegada": "2026-10-16 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC GIULIA", "berth": "CARIOCA", "dia": "TERÇA", "deadline": "2026-10-16 12:00", "previsao_chegada": "2026-10-13 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING ARGENTINA", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-10-16 12:00", "previsao_chegada": "2026-10-17 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM IRON", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "2026-10-16 12:00", "previsao_chegada": "2026-10-17 10:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC PERLE", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-10-16 12:00", "previsao_chegada": "2026-10-20 13:46", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FIT", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "2026-10-16 12:00", "previsao_chegada": "2026-10-20 22:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "HYUNDAI TOKYO", "berth": "FL2", "dia": "DOMINGO", "deadline": "2026-10-16 18:00", "previsao_chegada": "2026-10-27 09:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN EVOLUTION", "berth": "SEA", "dia": "DOMINGO", "deadline": "2026-10-17 12:00", "previsao_chegada": "2026-10-18 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN EXPERIENCE", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "2026-10-19 09:00", "previsao_chegada": "2026-10-19 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN RESILIENTE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-10-19 12:00", "previsao_chegada": "2026-10-20 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAR", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-10-19 12:00", "previsao_chegada": "2026-10-21 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COPIAPO", "berth": "WMED-SB", "dia": "QUARTA", "deadline": "2026-10-19 18:00", "previsao_chegada": "2026-10-20 23:59", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL GUARUJA", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-10-20 12:00", "previsao_chegada": "2026-10-21 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "APL NEW JERSEY", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-10-20 12:00", "previsao_chegada": "2026-10-22 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "GRANDE TEMA", "berth": "", "dia": "", "deadline": "2026-10-20 15:00", "previsao_chegada": "2026-10-21 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NAVIOS AMARILLO", "berth": "ZGT-SB", "dia": "QUINTA", "deadline": "2026-10-21 12:00", "previsao_chegada": "2026-10-22 05:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SANTOS", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-10-21 12:00", "previsao_chegada": "2026-10-22 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING BRAZIL", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "2026-10-21 18:00", "previsao_chegada": "2026-10-22 10:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NYK DIANA", "berth": "LUX-NB", "dia": "SEXTA", "deadline": "2026-10-22 12:00", "previsao_chegada": "2026-10-23 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LOTA", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-10-22 18:00", "previsao_chegada": "2026-10-23 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC QUITTERIE", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-10-23 12:00", "previsao_chegada": "2026-10-26 09:45", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM IRON", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-10-23 18:00", "previsao_chegada": "2026-10-25 15:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "ONE GEORGE WASHINGTON", "berth": "FL2", "dia": "DOMINGO", "deadline": "2026-10-23 18:00", "previsao_chegada": "2026-10-28 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "HMM BANGKOK", "berth": "FL2", "dia": "DOMINGO", "deadline": "2026-10-23 18:00", "previsao_chegada": "2026-11-03 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN JACARANDA", "berth": "SEA", "dia": "DOMINGO", "deadline": "2026-10-24 12:00", "previsao_chegada": "2026-10-25 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN JATOBA", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "2026-10-26 09:00", "previsao_chegada": "2026-10-26 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CONTI CONQUEST", "berth": "CARIOCA", "dia": "TERÇA", "deadline": "2026-10-26 12:00", "previsao_chegada": "2026-10-27 01:10", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SUAPE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-10-26 12:00", "previsao_chegada": "2026-10-27 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "KOTA PAHLAWAN", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-10-26 18:00", "previsao_chegada": "2026-10-26 02:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC CATERINA", "berth": "WMED-SB", "dia": "QUARTA", "deadline": "2026-10-26 18:00", "previsao_chegada": "2026-10-27 23:59", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM SANTOS", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-10-27 12:00", "previsao_chegada": "2026-10-28 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CARDIFF", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-10-27 12:00", "previsao_chegada": "2026-10-29 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MELINA", "berth": "ZGT-SB", "dia": "QUINTA", "deadline": "2026-10-28 12:00", "previsao_chegada": "2026-10-29 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM KRYPTON", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "2026-10-28 12:00", "previsao_chegada": "2026-10-29 09:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL ITAJAI", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-10-28 12:00", "previsao_chegada": "2026-10-29 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM MISSISSIPPI", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-10-29 18:00", "previsao_chegada": "2026-10-30 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING BRAZIL", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-10-30 12:00", "previsao_chegada": "2026-10-31 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC ILARIA", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-10-30 12:00", "previsao_chegada": "2026-11-02 07:48", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN POLARIS", "berth": "SEA", "dia": "DOMINGO", "deadline": "2026-10-31 12:00", "previsao_chegada": "2026-11-01 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN RESILIENTE", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "2026-11-02 09:00", "previsao_chegada": "2026-11-02 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NAVIOS AMARILLO", "berth": "ZGT-NB", "dia": "TERÇA", "deadline": "2026-11-02 10:00", "previsao_chegada": "2026-11-03 05:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN EXPERIENCE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-11-02 12:00", "previsao_chegada": "2026-11-03 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAME", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-11-02 12:00", "previsao_chegada": "2026-11-16 07:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC MICHELA", "berth": "WMED-SB", "dia": "QUARTA", "deadline": "2026-11-02 18:00", "previsao_chegada": "2026-11-05 17:02", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM VERACRUZ", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-11-03 12:00", "previsao_chegada": "2026-11-04 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SWANSEA", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-11-03 12:00", "previsao_chegada": "2026-11-05 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SANTOS", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-11-04 12:00", "previsao_chegada": "2026-11-05 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM HONG KONG", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "2026-11-05 12:00", "previsao_chegada": "2026-11-07 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LAMANAI", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-11-05 18:00", "previsao_chegada": "2026-11-06 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM KRYPTON", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-11-06 12:00", "previsao_chegada": "2026-11-07 04:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM THORIUM", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "2026-11-06 12:00", "previsao_chegada": "2026-11-09 11:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "YM MOBILITY", "berth": "FL2-NB", "dia": "DOMINGO", "deadline": "2026-11-06 18:00", "previsao_chegada": "2026-11-08 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NAVIOS DOMINO", "berth": "LUX-SB", "dia": "SEGUNDA", "deadline": "2026-11-06 18:00", "previsao_chegada": "2026-11-08 21:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FIT", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-11-09 12:00", "previsao_chegada": "2026-11-09 02:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN JATOBA", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-11-09 12:00", "previsao_chegada": "2026-11-10 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAIR", "berth": "SEAS-EB", "dia": "QUARTA", "deadline": "2026-11-09 12:00", "previsao_chegada": "2026-11-20 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC AJACCIO", "berth": "WMED-SB", "dia": "QUARTA", "deadline": "2026-11-09 18:00", "previsao_chegada": "2026-11-12 14:27", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL FORTALEZA", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-11-10 12:00", "previsao_chegada": "2026-11-11 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM XIAMEN", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-11-10 12:00", "previsao_chegada": "2026-11-12 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL ITAJAI", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-11-11 12:00", "previsao_chegada": "2026-11-12 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LEON", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-11-12 18:00", "previsao_chegada": "2026-11-13 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC EMMA", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-11-13 12:00", "previsao_chegada": "2026-11-16 10:52", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN EXPERIENCE", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "2026-11-16 09:00", "previsao_chegada": "2026-11-16 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LONCOMILLA", "berth": "ZGT-NB", "dia": "TERÇA", "deadline": "2026-11-16 10:00", "previsao_chegada": "2026-11-17 05:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN RESILIENTE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "2026-11-16 12:00", "previsao_chegada": "2026-11-17 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "KOTA ELOK", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-11-16 18:00", "previsao_chegada": "2026-11-17 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL GUARUJA", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-11-17 12:00", "previsao_chegada": "2026-11-18 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM THORIUM", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-11-17 12:00", "previsao_chegada": "2026-11-18 14:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM RABELAIS", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-11-17 12:00", "previsao_chegada": "2026-11-19 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SANTOS", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-11-18 12:00", "previsao_chegada": "2029-11-19 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING MEXICO", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "2026-11-18 18:00", "previsao_chegada": "2026-11-19 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NAVIOS DOMINO", "berth": "LUX-NB", "dia": "SEXTA", "deadline": "2026-11-19 12:00", "previsao_chegada": "2026-11-20 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAITH", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-11-20 12:00", "previsao_chegada": "2026-11-21 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM SANTOS", "berth": "BRACO", "dia": "QUARTA", "deadline": "2026-11-24 12:00", "previsao_chegada": "2026-11-25 05:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL ITAJAI", "berth": "PUMA", "dia": "QUINTA", "deadline": "2026-11-25 12:00", "previsao_chegada": "2026-11-26 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM GEORGE SAND", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "2026-11-26 12:00", "previsao_chegada": "2026-11-28 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SANTA INES", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-11-26 18:00", "previsao_chegada": "2026-11-27 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC NATASHA XII", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "2026-11-27 12:00", "previsao_chegada": "2026-11-30 07:49", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING MEXICO", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "2026-11-27 18:00", "previsao_chegada": "2026-11-28 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM PUCCINI", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "2026-12-01 12:00", "previsao_chegada": "2026-12-03 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LOTA", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-12-03 18:00", "previsao_chegada": "2026-12-04 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NYK DIANA", "berth": "LUX-SB", "dia": "SEGUNDA", "deadline": "2026-12-04 18:00", "previsao_chegada": "2026-12-06 21:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FINE", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-12-07 12:00", "previsao_chegada": "2026-12-09 04:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM LISA MARIE", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-12-14 12:00", "previsao_chegada": "2026-12-16 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NYK DIANA", "berth": "LUX-NB", "dia": "SEXTA", "deadline": "2026-12-17 12:00", "previsao_chegada": "2026-12-18 13:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LAMANAI", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-12-17 18:00", "previsao_chegada": "2026-12-18 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING DANUBE", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-12-21 12:00", "previsao_chegada": "2026-12-23 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "KOTA EMBUN", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-12-21 12:00", "previsao_chegada": "2026-12-23 11:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LEON", "berth": "SIRIUS", "dia": "SEXTA", "deadline": "2026-12-23 12:00", "previsao_chegada": "2026-12-25 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING RHINE", "berth": "SEAS1-EB", "dia": "QUARTA", "deadline": "2026-12-28 12:00", "previsao_chegada": "2026-12-30 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-10-21 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "APL FLORIDA", "berth": "SEAS3-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-10-24 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-10-28 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC LETICIA", "berth": "CARIOCA", "dia": "TERÇA", "deadline": "", "previsao_chegada": "2026-10-29 19:03", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "PRESTIGE", "berth": "SEAS3-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-10-31 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAME", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-10-31 22:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAITH", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-11-02 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FAIR", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-11-03 00:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM COBALT", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "", "previsao_chegada": "2026-11-04 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-11-04 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "KOTA ELOK", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-11-07 02:01", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "HMM JAKARTA", "berth": "FL2", "dia": "DOMINGO", "deadline": "", "previsao_chegada": "2026-11-08 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC NAPOLI", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "", "previsao_chegada": "2026-11-09 07:48", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SUAPE", "berth": "PLATA-NB", "dia": "SEGUNDA", "deadline": "", "previsao_chegada": "2026-11-09 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM COBALT", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-11-10 23:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-11-11 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "YM MODERATION", "berth": "FL2", "dia": "DOMINGO", "deadline": "", "previsao_chegada": "2026-11-15 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC MELINE", "berth": "WMED-SB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-11-17 23:59", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN PANTANAL", "berth": "SSR", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-11-18 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "EVER FINE", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-11-20 11:30", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MERCOSUL SUAPE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "", "previsao_chegada": "2026-11-24 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM SILVER", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "", "previsao_chegada": "2026-11-27 12:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM LISA MARIE", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-11-27 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "LOG-IN EXPERIENCE", "berth": "PLATA-SB", "dia": "TERÇA", "deadline": "", "previsao_chegada": "2026-12-01 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "ALESSIA", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-12-02 17:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MSC DANIT", "berth": "SANTANA", "dia": "SEGUNDA", "deadline": "", "previsao_chegada": "2026-12-02 18:37", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "KOTA EMBUN", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-12-04 02:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MARIA H", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-05 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM SILVER", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-05 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING DANUBE", "berth": "SEAS1", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-12-05 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "GREENHOUSE", "berth": "FL2", "dia": "DOMINGO", "deadline": "", "previsao_chegada": "2026-12-06 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "X-PRESS PISCES", "berth": "SEAS3-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-12 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "COSCO SHIPPING RHINE", "berth": "SEAS1-WB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2026-12-12 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "YM MOVEMENT", "berth": "FL2", "dia": "DOMINGO", "deadline": "", "previsao_chegada": "2026-12-13 01:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM FRANCOISE SAGAN", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-12-17 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM OSMIUM", "berth": "SEAS2-WB", "dia": "QUINTA", "deadline": "", "previsao_chegada": "2026-12-17 10:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM SYRACUSE", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-19 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "APL NEW JERSEY", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-12-24 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "NORWALK", "berth": "SEAS3", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-26 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM OSMIUM", "berth": "SEAS2-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2026-12-26 18:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CARDIFF", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2026-12-31 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM ATLANTIC", "berth": "SEAS3-WB/E", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2027-01-02 06:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SWANSEA", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2027-01-07 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "SANTA INES", "berth": "SIRIUS-SB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2027-01-08 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM XIAMEN", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2027-01-14 00:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LOTA", "berth": "SIRIUS-SB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2027-01-15 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "PRESTIGE", "berth": "SEAS3-EB", "dia": "SÁBADO", "deadline": "", "previsao_chegada": "2027-01-16 07:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LAMANAI", "berth": "SIRIUS-SB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2027-01-29 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "MAERSK LEON", "berth": "SIRIUS-SB", "dia": "SEXTA", "deadline": "", "previsao_chegada": "2027-02-05 19:00", "liberacao_dry": "", "duracao_janela": ""}, {"navio": "CMA CGM RABELAIS", "berth": "BRAZEX-NB", "dia": "QUARTA", "deadline": "", "previsao_chegada": "2028-09-10 00:00", "liberacao_dry": "", "duracao_janela": ""}]};
 
@@ -84,88 +123,152 @@ const COLS = [
   ["liberacao_dry", "Liberação do dry"], ["duracao_janela", "Duração da janela"],
 ];
 const DATAS = new Set(["deadline", "previsao_chegada", "liberacao_dry"]);
-const estado = { col: "deadline", asc: true, busca: "", vencidos: false };
+const H = 3600e3;
+const estado = { col: "deadline", asc: true, busca: "", vencidos: false, filtro: null };
 
 function lerPref() {
-  try { Object.assign(estado, JSON.parse(localStorage.getItem("painel-navios") || "{}"), { busca: "" }); } catch (_) {}
+  try { const p = JSON.parse(localStorage.getItem("painel-navios") || "{}");
+        ["col", "asc", "vencidos"].forEach(k => { if (k in p) estado[k] = p[k]; }); } catch (_) {}
 }
 function salvarPref() {
   try { localStorage.setItem("painel-navios", JSON.stringify({ col: estado.col, asc: estado.asc, vencidos: estado.vencidos })); } catch (_) {}
 }
 
-function paraDate(s) { return s ? new Date(s.replace(" ", "T")) : null; }
+const paraDate = s => s ? new Date(s.replace(" ", "T")) : null;
 function fmt(s) {
   if (!s) return "";
-  const [d, h] = s.split(" "); const [a, m, dia] = d.split("-");
+  const [d, h] = s.split(" "), [a, m, dia] = d.split("-");
   return `${dia}/${m}/${a.slice(2)} ${h}`;
 }
-
-// Minutos entre a liberação do dry e o deadline (para ordenar a janela).
 function janelaMin(n) {
   const a = paraDate(n.liberacao_dry), b = paraDate(n.deadline);
   return a && b ? (b - a) / 60000 : null;
 }
+function fmtDur(min) {
+  const h = Math.round(min / 60), d = Math.floor(h / 24), r = h % 24;
+  return d ? `${d}d ${r}h` : `${r}h`;
+}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+// Regras de cada indicador; "agora" é o momento em que a página é aberta.
+const FILTROS = {
+  aberto: (n, t) => { const l = paraDate(n.liberacao_dry), d = paraDate(n.deadline); return l && d && l <= t && d > t; },
+  h48:    (n, t) => { const d = paraDate(n.deadline); return d && d > t && d - t <= 48 * H; },
+  d7:     (n, t) => { const c = paraDate(n.previsao_chegada); return c && c >= t && c - t <= 7 * 24 * H; },
+  janela: (n, t) => { const d = paraDate(n.deadline); return janelaMin(n) !== null && d > t; },
+};
+
+function kpis(t) {
+  const nav = DADOS.navios;
+  const aberto = nav.filter(n => FILTROS.aberto(n, t));
+  const h48 = nav.filter(n => FILTROS.h48(n, t));
+  const h24 = h48.filter(n => paraDate(n.deadline) - t <= 24 * H);
+  const d7 = nav.filter(n => FILTROS.d7(n, t));
+  const d2 = d7.filter(n => paraDate(n.previsao_chegada) - t <= 48 * H);
+  const jan = nav.filter(n => FILTROS.janela(n, t)).map(n => ({ n, m: janelaMin(n) }));
+  const media = jan.length ? jan.reduce((s, x) => s + x.m, 0) / jan.length : null;
+  const curta = jan.slice().sort((a, b) => a.m - b.m)[0];
+
+  const cards = [
+    { id: "aberto", rot: "Recebimento aberto agora", val: aberto.length, un: aberto.length === 1 ? "navio" : "navios",
+      det: "Dry liberado e deadline ainda não vencido",
+      pill: aberto.length ? ["good", "Gate aberto"] : ["neutral", "Nenhum aberto"] },
+    { id: "h48", rot: "Deadlines em 48 h", val: h48.length, un: h48.length === 1 ? "navio" : "navios",
+      det: h24.length ? `${h24.length} vencem nas próximas 24 h` : "Nenhum vence nas próximas 24 h",
+      pill: h24.length ? ["crit", "Ação hoje"] : h48.length ? ["warn", "Atenção"] : ["good", "Sem urgência"] },
+    { id: "d7", rot: "Chegadas em 7 dias", val: d7.length, un: d7.length === 1 ? "navio" : "navios",
+      det: `${d2.length} previstas para as próximas 48 h`, pill: ["neutral", "Previsão"] },
+    { id: "janela", rot: "Janela média de recebimento", val: media === null ? "—" : fmtDur(media), un: "",
+      det: curta ? `Mais curta: ${fmtDur(curta.m)} · ${curta.n.navio}` : "Sem navios com dry liberado",
+      pill: curta && curta.m < 48 * 60 ? ["warn", "Janela curta à vista"] : ["neutral", `${jan.length} navios com data`] },
+  ];
+  document.getElementById("kpis").innerHTML = cards.map(c => `
+    <button class="kpi" type="button" data-f="${c.id}" aria-pressed="${estado.filtro === c.id}">
+      <span class="kpi-rot">${c.rot}</span>
+      <span class="kpi-val">${esc(c.val)}${c.un ? `<small>${c.un}</small>` : ""}</span>
+      <span class="kpi-det">${esc(c.det)}</span>
+      <span class="pill ${c.pill[0]}">${c.pill[1]}</span>
+    </button>`).join("");
+}
+
 function valorOrdem(n, c) { return c === "duracao_janela" ? janelaMin(n) : n[c] || null; }
 
 function render() {
-  const agora = new Date();
-  const lim48 = new Date(agora.getTime() + 48 * 3600e3);
+  const t = new Date();
+  kpis(t);
   const q = estado.busca.trim().toUpperCase();
-  let linhas = DADOS.navios.filter(n => {
+  const f = estado.filtro && FILTROS[estado.filtro];
+  const linhas = DADOS.navios.filter(n => {
     if (q && !`${n.navio} ${n.berth} ${n.dia}`.includes(q)) return false;
+    if (f) return f(n, t);
     const dl = paraDate(n.deadline);
-    if (!estado.vencidos && dl && dl < agora) return false;
-    return true;
+    return estado.vencidos || !dl || dl >= t;
   });
   const c = estado.col, dir = estado.asc ? 1 : -1;
   linhas.sort((a, b) => {
     const va = valorOrdem(a, c), vb = valorOrdem(b, c);
-    // Vazios sempre no fim, em qualquer direção.
-    if (va === null && vb === null) return 0;
+    if (va === null && vb === null) return 0;   // vazios sempre no fim
     if (va === null) return 1;
     if (vb === null) return -1;
     return (typeof va === "number" ? va - vb : va.localeCompare(vb, "pt-BR")) * dir;
   });
 
-  document.getElementById("cab").innerHTML = COLS.map(([k, t]) =>
-    `<th data-col="${k}">${t}${k === c ? `<span class="seta">${estado.asc ? "▲" : "▼"}</span>` : ""}</th>`).join("");
+  document.getElementById("cab").innerHTML = COLS.map(([k, tt]) =>
+    `<th aria-sort="${k === c ? (estado.asc ? "ascending" : "descending") : "none"}"><button type="button" data-col="${k}">${tt}${k === c ? `<span class="seta">${estado.asc ? "▲" : "▼"}</span>` : ""}</button></th>`).join("");
   document.getElementById("corpo").innerHTML = linhas.map(n => {
     const dl = paraDate(n.deadline);
-    const cls = dl && dl < agora ? "late" : dl && dl < lim48 ? "soon" : "";
+    const cls = dl && dl < t ? "late" : dl && dl - t <= 48 * H ? "soon" : "";
+    const tag = cls === "late" ? `<span class="pill crit tag">Vencido</span>` : cls === "soon" ? `<span class="pill warn tag">48 h</span>` : "";
     return `<tr class="${cls}">` + COLS.map(([k]) => {
       const v = DATAS.has(k) ? fmt(n[k]) : n[k];
-      return `<td class="${k}${DATAS.has(k) ? " data" : ""}${v ? "" : " vazio"}">${v || "—"}</td>`;
+      const extra = k === "deadline" && v ? tag : "";
+      return `<td class="${k}${DATAS.has(k) ? " data" : ""}${v ? "" : " vazio"}">${v ? esc(v) : "—"}${extra}</td>`;
     }).join("") + "</tr>";
-  }).join("") || `<tr><td colspan="7" class="vazio">Nenhum navio encontrado.</td></tr>`;
+  }).join("") || `<tr><td colspan="7" class="vazio">Nenhum navio neste filtro.</td></tr>`;
 
   const titulo = COLS.find(([k]) => k === c)[1];
   document.getElementById("ordem").textContent = DATAS.has(c)
     ? `${titulo}: ${estado.asc ? "mais próximo primeiro" : "mais distante primeiro"}`
-    : c === "duracao_janela"
-      ? `${titulo}: ${estado.asc ? "mais curta primeiro" : "mais longa primeiro"}`
-      : `${titulo}: ${estado.asc ? "A → Z" : "Z → A"}`;
+    : c === "duracao_janela" ? `${titulo}: ${estado.asc ? "mais curta primeiro" : "mais longa primeiro"}`
+    : `${titulo}: ${estado.asc ? "A → Z" : "Z → A"}`;
+  document.getElementById("limpar").hidden = !estado.filtro;
+  document.getElementById("vencidos").disabled = !!estado.filtro;
   document.getElementById("rodape").textContent =
-    `${linhas.length} de ${DADOS.navios.length} navios exibidos · clique no título de uma coluna para ordenar por ela.`;
+    `${linhas.length} de ${DADOS.navios.length} navios exibidos. Clique num indicador para filtrar a tabela e no título de uma coluna para ordenar.`;
 }
 
 function iniciar() {
-  if (!DADOS) { document.getElementById("sub").textContent = "Sem dados: rode tools/extrair_lista.py."; return; }
+  if (!DADOS) { document.getElementById("fonte").textContent = "Sem dados: rode tools/extrair_lista.py."; return; }
   lerPref();
-  const [d, h] = DADOS.atualizado_em.split(" "); const [a, m, dia] = d.split("-");
-  document.getElementById("sub").textContent = `Atualizado em ${dia}/${m}/${a} às ${h} · fonte: ${DADOS.fonte}`;
+  const [d, h] = DADOS.atualizado_em.split(" "), [a, m, dia] = d.split("-");
+  const idadeH = (Date.now() - paraDate(DADOS.atualizado_em)) / H;
+  document.getElementById("fonte").innerHTML =
+    `Lista de <b>${dia}/${m}/${a} ${h}</b> · ${DADOS.navios.length} navios` +
+    (idadeH > 6 ? ` · <span class="aviso">salva há ${idadeH >= 48 ? Math.floor(idadeH / 24) + " dias" : Math.floor(idadeH) + " h"}</span>` : "");
   document.getElementById("vencidos").checked = estado.vencidos;
+
+  document.getElementById("kpis").addEventListener("click", e => {
+    const b = e.target.closest(".kpi"); if (!b) return;
+    estado.filtro = estado.filtro === b.dataset.f ? null : b.dataset.f;
+    if (estado.filtro === "janela") { estado.col = "duracao_janela"; estado.asc = true; }
+    else if (estado.filtro === "d7") { estado.col = "previsao_chegada"; estado.asc = true; }
+    else if (estado.filtro) { estado.col = "deadline"; estado.asc = true; }
+    render();
+  });
   document.getElementById("cab").addEventListener("click", e => {
-    const th = e.target.closest("th"); if (!th) return;
-    if (estado.col === th.dataset.col) estado.asc = !estado.asc;
-    else { estado.col = th.dataset.col; estado.asc = true; }
+    const b = e.target.closest("button[data-col]"); if (!b) return;
+    if (estado.col === b.dataset.col) estado.asc = !estado.asc;
+    else { estado.col = b.dataset.col; estado.asc = true; }
     salvarPref(); render();
   });
   document.getElementById("ordem").addEventListener("click", () => { estado.asc = !estado.asc; salvarPref(); render(); });
   document.getElementById("busca").addEventListener("input", e => { estado.busca = e.target.value; render(); });
   document.getElementById("vencidos").addEventListener("change", e => { estado.vencidos = e.target.checked; salvarPref(); render(); });
+  document.getElementById("limpar").addEventListener("click", () => { estado.filtro = null; render(); });
   render();
+  setInterval(render, 60e3);  // indicadores acompanham o relógio
 }
 iniciar();
 </script>
-</body>
+
 </html>
